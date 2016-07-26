@@ -1,0 +1,17 @@
+{
+  "name": "MINIARTE",
+  "authors": [
+    "Ivo Zinenda <izinenda@outlook.com>"
+  ],
+  "description": "Construção Civil",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

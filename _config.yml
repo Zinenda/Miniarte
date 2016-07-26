@@ -1,0 +1,21 @@
+
+# Site settings
+title: Miniarte
+email: eduardoguta@gmail.com
+description: Construção Civil
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-email-protect
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+# author
+author: Ivo Zinenda
+  email: izinenda@outlook.com
