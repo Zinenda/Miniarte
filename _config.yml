@@ -16,6 +16,9 @@ sass:
   sass_dir: assets/_sass
   style: compressed
 
+port: 1234
+
 # author
-author: Ivo Zinenda
+author: 
+  name: Ivo Zinenda
   email: izinenda@outlook.com
