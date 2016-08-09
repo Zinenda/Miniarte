@@ -3,10 +3,19 @@
     <li>
         <a href="{{ site.github.url | prepend: site.url }}/" title="Página Inicial"><i class="fa fa-home fa-fw"></i> Página Inicial</a>
     </li>
-    <li>
-        <a href="#" title="Serviços"><i class="fa fa-caret-down fa-fw"></i> Serviços</a>
-        <!-- collapsible -->
-    </li>
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header black-text"><i class="fa fa-caret-down fa-fw"></i> Serviços</div>
+            <div class="collapsible-body">
+                <a href="#" title="Construção Civil">Construção Civil</a>
+                <a href="#" title="Estradas">Estradas</a>
+                <a href="#" title="Estaleiro">Estaleiro</a>
+                <a href="#" title="Carpintaria">Carpintaria</a>
+                <a href="#" title="Lojas">Lojas</a>
+                <a href="#" title="Vidreira">Vidreira</a>
+            </div>
+        </li>
+    </ul>
     <li>
         <a href="{{ site.github.url | prepend: site.url }}/sobre" title="Sobre a Empresa"><i class="fa fa-users fa-fw"></i> Sobre</a>
     </li>

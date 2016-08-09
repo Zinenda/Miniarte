@@ -29,6 +29,9 @@
     $('.materialboxed').materialbox();
     $('.slider').slider();
     $('.scrollspy').scrollSpy();
+    $('.collapsible').collapsible({
+      accordion : true
+    });
     
     // mansory init
     var $container = $('#masonry-grid');

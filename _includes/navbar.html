@@ -7,8 +7,27 @@
             <a href="{{ site.github.url | prepend: site.url }}/" title="Página Inicial"><i class="fa fa-home fa-fw"></i></a>
         </li>
         <li>
-            <a href="#" title="Serviços">Serviços <i class="fa fa-caret-down fa-fw"></i></a>
-            <!-- DROPDOWN -->
+            <a href="#" title="Serviços" class="dropdown-button" data-activates="dropdown-servicos">Serviços <i class="fa fa-caret-down fa-fw"></i></a>
+            <ul id="dropdown-servicos" class="dropdown-content">
+                <li>
+                    <a href="#" title="Construção Civil">Construção Civil</a>
+                </li>
+                <li>
+                    <a href="#" title="Estradas">Estradas</a>
+                </li>
+                <li>
+                    <a href="#" title="Estaleiro">Estaleiro</a>
+                </li>
+                <li>
+                    <a href="#" title="Carpintaria">Carpintaria</a>
+                </li>
+                <li>
+                    <a href="#" title="Lojas">Lojas</a>
+                </li>
+                <li>
+                    <a href="#" title="Vidreira">Vidreira</a>
+                </li>
+            </ul>
         </li>
         <li>
             <a href="{{ site.github.url | prepend: site.url }}/sobre" title="Sobre a Empresa">Sobre <i class="fa fa-users fa-fw"></i></a>
