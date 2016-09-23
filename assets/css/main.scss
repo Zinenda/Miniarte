@@ -5,9 +5,31 @@
 
 // custom
 .page-header {
+    position: relative;
     img {
         width: 100%;
+        height: auto;
     }
+
+    .title {
+        position: absolute;
+        right: 50%;
+        top: 60%;
+    }
+}
+
+.page-footer {
+    i,
+    .btn-flat {
+        color: #fff;
+    }
+}
+
+.btn,
+.btn-flat,
+.btn-large {
+    border: solid 1px;
+    border-radius: 10px;
 }
 
 @import
