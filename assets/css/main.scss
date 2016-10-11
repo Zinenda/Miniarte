@@ -14,6 +14,14 @@
     }
 }
 
+.slider {
+    .slides {
+        .caption {
+            text-shadow: 2px -2px #444;
+        }
+    }
+}
+
 .page-footer {
     i,
     .btn-flat {
@@ -28,10 +36,17 @@
 #servicos {
     .card {
         background: $primary-color;
-        .card-header,
+        .card-title,
         .card-content {
             color: #fff;
         }
+    }
+}
+
+#sobre {
+    .card-panel {
+        background: $primary-color;
+        color: #fff;
     }
 }
 

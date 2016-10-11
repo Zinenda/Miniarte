@@ -27,19 +27,12 @@
     $('.button-collapse').sideNav();
     $('.modal-trigger').leanModal();
     $('.materialboxed').materialbox();
-    $('.slider').slider();
+    $('.slider').slider({
+      height: 900
+    });
     $('.scrollspy').scrollSpy();
     $('.collapsible').collapsible({
       accordion : true
     });
-    
-    // mansory init
-    var $container = $('#masonry-grid');
-    // initialize
-    $container.masonry({
-      columnWidth: '.col',
-      itemSelector: '.col',
-    });
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
