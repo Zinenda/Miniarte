@@ -3,18 +3,14 @@
 
 @charset "UTF-8";
 
+@import "variables";
+
 // custom
 .page-header {
     position: relative;
     img {
         width: 100%;
         height: auto;
-    }
-
-    .title {
-        position: absolute;
-        right: 50%;
-        top: 60%;
     }
 }
 
@@ -25,15 +21,29 @@
     }
 }
 
+#perfil {
+    background: $primary-color;
+}
+
+#servicos {
+    .card {
+        background: $primary-color;
+        .card-header,
+        .card-content {
+            color: #fff;
+        }
+    }
+}
+
+
 .btn,
 .btn-flat,
 .btn-large {
-    border: solid 1px;
+    border: solid 1px #fff;
     border-radius: 10px;
 }
 
 @import
-    "variables",
     "base",
     "imported"
 ;

@@ -1,39 +1,48 @@
 <nav class="nav-wrapper">
     <div class="container">
-        <a href="{{ site.github.url | site.url }}/" class="brand-logo">{{ site.title }}</a>
+        <a href="{{ site.baseurl }}/" class="brand-logo center" title="{{ site.title }}">{{ site.title }}</a>
         <a href="#" data-activates="sidenav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+
+        <ul class="left hide-on-med-and-down">
+            <li>
+                <a href="{{ site.baseurl }}/#servicos" title="Serviços">Serviços</a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}/#parceiros" title="Parceiros">Parceiros</a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}/blog" title="Blogue">Blogue</a>
+            </li>
+        </ul>
 
         <ul class="right hide-on-med-and-down">
             <li>
-                <a href="{{ site.github.url | prepend: site.url }}/" title="Página Inicial"><i class="fa fa-home fa-fw"></i></a>
+                <a href="#sobre" title="Sobre" class="modal-trigger">Sobre</a>
             </li>
             <li>
-                <a href="#" title="Serviços" class="dropdown-button" data-activates="dropdown-servicos">Serviços <i class="fa fa-caret-down fa-fw"></i></a>
-                <ul id="dropdown-servicos" class="dropdown-content">
+                <a href="#" class="dropdown-button" title="Contactos" data-activates="dropdown-contactos">Contactos</a>
+                <ul id="dropdown-contactos" class="dropdown-content">
                     <li>
-                        <a href="#" title="Construção Civil">Construção Civil</a>
+                        <a href="http://fb.com/{{ site.facebook }}" class="waves-effect waves-indigo" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
                     </li>
                     <li>
-                        <a href="#" title="Estradas">Estradas</a>
+                        <a href="http://twitter.com/{{ site.twitter }}" class="waves-effect waves-blue" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
                     </li>
                     <li>
-                        <a href="#" title="Estaleiro">Estaleiro</a>
+                        <a href="http://plus.google.com/{{ site.google_link }}" class="waves-effect waves-red" title="Google Plus"><i class="fa fa fw fa-google-plus"></i>Google Plus</a>
                     </li>
                     <li>
-                        <a href="#" title="Carpintaria">Carpintaria</a>
+                        <a href="http://linkedin.com/{{ site.linkedin }}" class="waves-effect waves-deep-blue" title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
                     </li>
                     <li>
-                        <a href="#" title="Lojas">Lojas</a>
+                        <a href="mailto:{{ site.email }}" class="waves-effect waves-light"><i class="fa fa-fw fa-envelope"></i>Email</a>
                     </li>
                     <li>
-                        <a href="#" title="Vidreira">Vidreira</a>
+                        <a href="#" class="waves-effect waves-teal"><i class="fa fa-fw fa-whatsapp"></i>+258 849851174</a>
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="{{ site.github.url | prepend: site.url }}/sobre" title="Sobre a Empresa">Sobre <i class="fa fa-users fa-fw"></i></a>
-            </li>
         </ul>
+        {% include sidenav.html %}
     </div>
-    {% include sidenav.html %}
 </nav>
