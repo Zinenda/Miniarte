@@ -6,7 +6,7 @@
 <hr><br>
         
 <div class="row">
-    <form action="mailto:{{ site.email }}" method="POST" class="col s12">
+    <form action="mailto:{{ site.email | encoded_email }}" method="POST" class="col s12">
         <div class="row">
             <div class="input-field col s12">
                 <input id="first_name" type="text" class="validate">

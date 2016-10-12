@@ -1,22 +1,18 @@
 <!-- sideNav -->
 <ul id="sidenav" class="side-nav">
     <li>
-        <a href="{{ site.github.url | prepend: site.url }}/" title="Página Inicial"><i class="fa fa-home fa-fw"></i> Página Inicial</a>
+        <a href="{{ site.baseurl }}/" title="Página Inicial"><i class="fa fa-fw fa-home"></i>Página Inicial</a>
     </li>
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-            <div class="collapsible-header black-text"><i class="fa fa-caret-down fa-fw"></i> Serviços</div>
-            <div class="collapsible-body">
-                <a href="#" title="Construção Civil">Construção Civil</a>
-                <a href="#" title="Estradas">Estradas</a>
-                <a href="#" title="Estaleiro">Estaleiro</a>
-                <a href="#" title="Carpintaria">Carpintaria</a>
-                <a href="#" title="Lojas">Lojas</a>
-                <a href="#" title="Vidreira">Vidreira</a>
-            </div>
-        </li>
-    </ul>
     <li>
-        <a href="{{ site.github.url | prepend: site.url }}/sobre" title="Sobre a Empresa"><i class="fa fa-users fa-fw"></i> Sobre</a>
+        <a href="{{ site.baseurl }}/#servicos" title="Serviços">Serviços</a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/#parceiros" title="Parceiros">Parceiros</a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/blog" title="Blogue">Blogue</a>
+    </li>
+    <li>
+        <a href="#sobre" title="Sobre" class="modal-trigger">Sobre</a>
     </li>
 </ul>
