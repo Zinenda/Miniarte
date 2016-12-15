@@ -1,0 +1,55 @@
+hr.certificate {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.certificate:after {
+    content: "\f0a3";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.certificate {
+    border-color: $primary-color;
+}
+
+hr.certificate:after {
+    color: $primary-color;
+    background-color: $primary-color-light;
+}
+
+hr.certificate-o {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.certificate-o:after {
+    content: "\f0a3";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.certificate-o {
+    border-color: #fff;
+}
+
+hr.certificate-o:after {
+    color: $primary-color-light;
+    background-color: #fff;
+}

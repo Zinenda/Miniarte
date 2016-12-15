@@ -27,12 +27,8 @@
     $('.button-collapse').sideNav();
     $('.modal-trigger').leanModal();
     $('.materialboxed').materialbox();
-    $('.slider').slider({
-      height: 900
-    });
+    $('.slider').slider();
     $('.scrollspy').scrollSpy();
-    $('.collapsible').collapsible({
-      accordion : true
-    });
+    $('.collapsible').collapsible();
   }); // end of document ready
 })(jQuery); // end of jQuery name space

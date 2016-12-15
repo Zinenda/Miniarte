@@ -1,62 +1,17 @@
-<section id="servicos" class="section scrollspy">
+<section id="servicos" class="section scrollspy primary-color-light white-text">
     <div class="container">
-        <h2 class="center-align">Serviços</h2><hr>
-        <div class="row">
-            <div class="col s12 l4">
-                <div class="card hoverable black-text">
-                    <header class="card-title"><h2 class="light center">Construção Civil</h2></header>
-                    <div class="card-image">
-                        <img src="{{ site.baseurl }}/assets/img/servicos/constructor.png" alt="Icone de um construtor">
-                    </div>
-                </div>
-            </div>
+        <h2 class="center">Serviços</h2><hr class="certificate-o">
 
-            <div class="col s12 l4">
-                <div class="card hoverable black-text">
-                    <header class="card-title"><h2 class="light center">Estradas</h2></header>
-                    <div class="card-image">
-                        <img src="{{ site.baseurl }}/assets/img/servicos/traffic-cone-signal-tool-for-traffic.png" alt="icone de trafego">
+        <section class="section row">
+            {% for image in site.servicos %}
+                <div class="col s12 l4">
+                    <div class="center">
+                        <img src="{{ image.image_path }}" alt="{{ image.title }}">
+                        <h3 class="light">{{ image.title }}</h3>
+                        <p class="justify">{{ image.description }}</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="col s12 l4">
-                <div class="card hoverable black-text">
-                    <header class="card-title"><h2 class="light center">Carpintaria</h2></header>
-                    <div class="card-image">
-                        <img src="{{ site.baseurl }}/assets/img/servicos/hammer.png" alt="icone de martelo">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 l4">
-                <div class="card hoverable black-text">
-                    <header class="card-title"><h2 class="light center">Loja</h2></header>
-                    <div class="card-image">
-                        <img src="{{ site.baseurl }}/assets/img/servicos/roof-holding-of-a-crane-on-prefabricated-house.png" alt="icone de loja">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 l4">
-                <div class="card hoverable black-text">
-                    <header class="card-title"><h2 class="light center">Vidreira</h2></header>
-                    <div class="card-image">
-                        <img src="{{ site.baseurl }}/assets/img/servicos/electrical-saw-wheel-cutting-tool.png" alt="icone de serra electrica">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 l4">
-                <div class="card hoverable black-text">
-                    <header class="card-title"><h2 class="light center">Estaleiro</h2></header>
-                    <div class="card-image">
-                        <img src="{{ site.baseurl }}/assets/img/servicos/barrow-with-construction-materials.png" alt="icone de uma barra de mao">
-                    </div>
-                </div>
-            </div>
-        </div>
+            {% endfor %}
+        </section>
     </div>
 </section>

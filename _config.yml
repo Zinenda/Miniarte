@@ -1,8 +1,7 @@
-
 # Site settings
 title: MiniArte
 email: eduardoguta@gmail.com
-description: Construção Civil
+description: "Construção Civil & Ferragens"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -23,7 +22,7 @@ port: 1212
 
 # author
 author: Ivo Zinenda
-author_email: izinenda@outlook.com
+author_email: izinenda@izitag.site
 author_picture: /assets/img/author/zinenda.jpg
 
 image: /assets/img/brand/logotipo.png
@@ -31,3 +30,8 @@ logo: /assets/img/brand/logotipo.png
 
 jekyll-minifier:
   exclude: 'sitemap.xml'
+
+# collections
+collections:
+  members:
+  servicos:

@@ -5,10 +5,24 @@
 <meta name="reply-to" content="{{ site.author_email }}">
 <meta name="theme-color" content="#ff6d00">
 
+<!-- Disable tap highlight on IE -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- Web Application Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="{{ site.title }}">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 {% seo %}
 
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+
 <link rel="icon" href="{{ site.baseurl }}/favicon.png">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
         
-<script src="{{ site.baseurl }}assets/js/modernizr-2.8.3.min.js" async defer></script>
+<script src="/assets/js/modernizr-2.8.3.min.js" async defer></script>

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" dir="ltr">
     <head>
         {% include head.html %}   
     </head>
     <body>
         {% include navbar.html %}
-        <main>
+        {% include sidenav.html %}
+        <main class="animate-bottom">
             {{ content }}
         </main>
-         {% include sobre.html %}
+        {% include sobre.html %}
         {% include footer.html %}
         {% include scripts.html %}
