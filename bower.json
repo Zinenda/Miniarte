@@ -3,15 +3,21 @@
   "authors": [
     "Ivo Zinenda <izinenda@outlook.com>"
   ],
-  "description": "Construção Civil",
+  "description": "construcao civil e ferranges",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Zinenda/mcc",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "private": true,
+  "dependencies": {
+    "materialize": "^0.97.8",
+    "font-awesome": "fontawesome#^4.7.0",
+    "galleria": "^1.5.1"
+  }
 }

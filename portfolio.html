@@ -3,48 +3,37 @@ layout: default
 ---
 
 <seaction id="portfolio" class="section">
-    <div class="container grey lighten-4">
-        <div class="row">
-            <ul class="tabs col s12">
-                <li class="tab col s3">
-                    <a href="#construcao" title="Construção Civil">Construção</a>
-                </li>
-                <li class="tab col s3">
-                    <a href="#lojas" title="Lojas">Lojas</a>
-                </li>
-                <li class="tab col s3">
-                    <a href="#carpintaria" title="Carpintaria">Carpintaria</a>
-                </li>
-                <li class="tab s3">
-                    <a href="#estaleiro" title="Estaleiro">Estaleiro</a>
-                </li>
-            </ul>
+    <div class="row">
+        <ul class="tabs col s12">
+            <li class="tab col s4">
+                <a href="#construcao" title="Construção Civil">Construção</a>
+            </li>
+            <li class="tab col s4">
+                <a href="#lojas" title="Lojas">Lojas</a>
+            </li>
+            <li class="tab col s4">
+                <a href="#carpintaria" title="Carpintaria">Carpintaria</a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="section">
+        <div id="construcao">
+            <div class="row">
+                {% image_set assets/img/portfolio/construcao --class=materialboxed %}
+            </div>
         </div>
 
-        <section class="section row">
-            <div id="construcao">
-                <div class="row">
-                    {% image_set assets/img/portfolio/construcao --class=materialboxed %}
-                </div>
+        <div id="lojas">
+            <div class="row">
+                {% image_set assets/img/portfolio/lojas --class=materialboxed %}
             </div>
+        </div>
 
-            <div id="lojas">
-                <div class="row">
-                    {% image_set assets/img/portfolio/lojas --class=materialboxed %}
-                </div>
+        <div id="carpintaria">
+            <div class="row">
+                {% image_set assets/img/portfolio/carpintaria --class=materialboxed %}
             </div>
-
-            <div id="carpintaria">
-                <div class="row">
-                    {% image_set assets/img/portfolio/carpintaria --class=materialboxed %}
-                </div>
-            </div>
-
-            <div id="estaleiro">
-                <div class="row">
-                    {% image_set assets/img/portfolio/estaleiro --class=materialboxed %}
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </seaction>
