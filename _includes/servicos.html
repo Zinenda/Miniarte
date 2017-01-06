@@ -1,17 +1,23 @@
-<section id="servicos" class="section scrollspy primary-color-light white-text">
+<section id="servicos" class="section primary-color-light white-text scrollspy">
     <div class="container">
-        <h2 class="center">Serviços</h2><hr class="certificate-o">
-
-        <section class="section row">
-            {% for image in site.servicos %}
-                <div class="col s12 l4">
-                    <div class="center">
-                        <img src="{{ image.image_path }}" alt="{{ image.title }}">
-                        <h3 class="light">{{ image.title }}</h3>
-                        <p class="justify">{{ image.description }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </section>
+        <h2 class="center-align">Serviços</h2><hr class="certificate-o">
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="center"><img src="/assets/img/servicos/constructor.png" alt="icone de construção Civil"></div>
+            </div>
+            <div class="col s12 l6">
+                <p title="serviços">Miniarte Construção Civil, Lda é uma empresa que procura manter seus clientes satisfeitos executando com precisão seus serviços.</p>
+                <p>Entre eles oferecemos: </p>
+                <p>
+                    <ul>
+                        <li>Construção de Edificios</li>
+                        <li>Manutenção de Estradas</li>
+                        <li>Carpintaria Mecanizada</li>
+                        <li><a href="/servicos/" title="Serviços" class="btn-large btn-flat waves-effect waves-light">Muito Mais</a></li>
+                    </ul>
+                </p>
+                <p>Inclusive temos lojas com diversos materiais de construção.</p>
+            </div>
+        </div>
     </div>
 </section>

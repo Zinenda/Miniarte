@@ -1,0 +1,23 @@
+---
+layout: default
+title: Serviços
+permalink: /servicos/
+---
+
+<section id="servicos" class="section scrollspy primary-color-light white-text">
+    <div class="container">
+        <h2 class="center">Serviços</h2><hr class="certificate-o">
+
+        <section class="section row">
+            {% for image in site.servicos %}
+                <div class="col s12 l4">
+                    <div class="center">
+                        <img src="{{ image.image_path }}" alt="{{ image.title }}">
+                        <h3 class="light">{{ image.title }}</h3>
+                        <p class="justify">{{ image.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+    </div>
+</section>
