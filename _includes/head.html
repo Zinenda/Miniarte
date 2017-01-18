@@ -19,11 +19,21 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 {% seo %}
 
-<link rel="icon" href="{{ site.baseurl }}/favicon.png">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+<link rel="icon" href="/favicon.png">
+
+<script>
+    {% include loadcss.js %}
+</script>
+<script id="loadcss">
+    loadCSS("/assets/css/main.css", document.getElementById("loadcss"));
+</script>
+
+<noscript>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</noscript>
 
 <script src="/assets/js/modernizr-2.8.3.min.js" async defer></script>
