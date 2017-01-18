@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+    - "0.12"
+after_success: 
+    - surge --project ./_site/ --domain mcc.surge.sh
+
+SURGE_LOGIN: izinenda@gmail.com
+SURGE_TOKEN: c52701424c773c7940c56a67307e3402
+
+deploy:
+    provider: surge
+    project: ./_site/
+    skip_cleanup: true
