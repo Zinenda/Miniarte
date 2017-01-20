@@ -1,5 +1,11 @@
 language: node_js
 node_js:
     - "0.12"
+
+deploy:
+    provider: surge
+    project: ./_site/
+    skip_cleanup: true
+
 after_success: 
     - surge --project ./_site --domain mcc.surge.sh
