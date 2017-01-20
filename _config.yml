@@ -2,14 +2,11 @@
 title: MiniArte
 email: eduardoguta@gmail.com
 description: "Construção Civil & Ferragens"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-admin
-  #- jekyll-github-metadata
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-email-protect
