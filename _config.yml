@@ -1,5 +1,5 @@
 # Site settings
-title: MiniArte
+title: MINIARTE
 email: eduardoguta@gmail.com
 description: "Construção Civil & Ferragens"
 
@@ -11,6 +11,7 @@ gems:
   - jekyll-sitemap
   - jekyll-email-protect
   - jekyll-minifier
+
 sass:
   sass_dir: assets/_sass
   style: compressed
@@ -23,7 +24,7 @@ author_email: izinenda@outlook.com
 author_picture: /assets/img/author/zinenda.jpg
 
 image: /assets/img/brand/logotipo.svg
-logo: /assets/img/brand/logotipo.png
+logo: /assets/img/brand/logo.svg
 
 jekyll-minifier:
   exclude: 'sitemap.xml'

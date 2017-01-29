@@ -9,7 +9,7 @@ nav {
 
   color: $navbar-font-color;
   @extend .z-depth-2;
-  background-color: rgba(65,131,215,.2);
+  background-color: $primary-color;
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-height-mobile;
