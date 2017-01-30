@@ -25,6 +25,13 @@
 
 <link rel="icon" href="/favicon.png">
 
+<style>
+    {% capture include_to_scssify %}
+        {% include style.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+</style>
+
 <script>
     {% include loadcss.js %}
 </script>

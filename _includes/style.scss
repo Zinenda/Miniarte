@@ -1,0 +1,83 @@
+@import "variables";
+
+.primary-color {
+    background: $primary-color;
+}
+
+.primary-color-light {
+    background: $primary-color-light;
+}
+
+.primary-color-dark {
+    background: $primary-color-dark;
+}
+
+// custom
+.page-header {
+    position: relative;
+    background: {
+        image: url(/assets/img/background.jpg);
+        size: cover;
+        attachment: fixed;
+    }
+    width: 100%;
+    height: 100vh;
+
+    .page-title {
+        position: absolute;
+        left: 5%;
+        top: 20%;
+    }
+}
+
+#portfolio {
+    img {
+        padding: 0 !important;
+        float: left;
+        width: 49.9999%;
+        max-height: 900px;
+        transition: box-shadow .25s;
+        box-shadow: 0;
+
+        &:hover {
+            transition: box-shadow .25s;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+        img {
+            width: 49.9999%;
+            max-height: 900px;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.page-footer {
+    i,
+    .btn-flat {
+        color: #fff;
+    }
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.btn,
+.btn-flat,
+.btn-large {
+    border: solid 1px #fff;
+    border-radius: 10px;
+}
