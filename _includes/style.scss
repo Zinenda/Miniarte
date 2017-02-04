@@ -15,16 +15,18 @@
 // custom
 .page-header {
     position: relative;
-    width: 100%;
-
-    img {
-        object-fit: cover;
+    height: 100vh;
+    background: {
+        image: url(/assets/img/background.jpg);
+        attachment: fixed;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
     }
-
     .page-title {
         position: absolute;
-        left: 5%;
         top: 20%;
+        left: 5%;
     }
 }
 
