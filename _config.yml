@@ -29,6 +29,13 @@ logo: /assets/img/brand/logo.svg
 jekyll-minifier:
   exclude: 'sitemap.xml'
 
+exclude:
+  - vendor
+  - Gemfile.lock
+  - .gitignore
+  - CNAME
+  - debug.log
+
 # collections
 collections:
   members:

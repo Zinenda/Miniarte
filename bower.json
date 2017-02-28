@@ -17,7 +17,6 @@
   "private": true,
   "dependencies": {
     "materialize": "^0.97.8",
-    "font-awesome": "fontawesome#^4.7.0",
-    "galleria": "^1.5.1"
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }

@@ -1,74 +1,21 @@
-{% if page.title == "Portfolio" %}
-    <nav class="nav-extended">
-        <div class="nav-wrapper">
-            <div class="container">
-                <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
-                <a href="#" data-activates="sidenav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo center" title="{{ site.title }}">{{ site.title }}</a>
+        <a href="#" class="button-collapse show-on-large" data-activates="sideNav"><i class="fa fa-navicon"></i></a>
 
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="/servicos" title="Serviços" class="waves-effect waves-light">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio" title="Portfolio" class="waves-effect waves-light">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#sobre" title="Sobre" class="modal-trigger waves-effect waves-light">Sobre</a>
-                    </li>
-                    <li><i class="fa fa-fw fa-tty"></i>+258 829851174</li>
-                    <li>
-                        <a href="mailto:{{ site.email | encode_email }}" class="waves-effect waves-light"><i class="fa fa-fw fa-envelope"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/miniarteconstrucao/" class="waves-effect waves-light" title="Facebook" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
-                    </li>
-                </ul>
-
-                <ul class="tabs tabs-transparent">
-                    <li class="tab col s3">
-                        <a href="#construcao" title="Construção Civil">Construção</a>
-                    </li>
-                    <li class="tab col s3">
-                        <a href="#lojas" title="Lojas">Lojas</a>
-                    </li>
-                    <li class="tab col s3">
-                        <a href="#carpintaria" title="Carpintaria">Carpintaria</a>
-                    </li>
-                    <li class="tab col s3">
-                        <a href="#equipamentos" title="Equipamentos">Equipamentos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    {% else %}
-        <nav class="nav-wrapper">
-            <div class="container">
-                <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
-                <a href="#" data-activates="sidenav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="/servicos" title="Serviços" class="waves-effect waves-light">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio" title="Portfolio" class="waves-effect waves-light">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#sobre" title="Sobre" class="modal-trigger waves-effect waves-light">Sobre</a>
-                    </li>
-                    <li><i class="fa fa-fw fa-tty"></i>+258 829851174</li>
-                    <li>
-                        <a href="mailto:{{ site.email | encode_email }}" class="waves-effect waves-light"><i class="fa fa-fw fa-envelope"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/miniarteconstrucao/" class="waves-effect waves-light" title="Facebook" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="http://miniarte.co.mz:2096" title="WebMail" class="btn-flat waves-effects waves-light white-text" style="border: solid 1px #fff;"><i class="fa fa-user"></i>Login WebMail</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-{% endif %}
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a href="https://fb.com/{{ site.facebook }}" title="Facebook"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="mailto:{{ site.email }}" title="Email"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li>
+                <a href="#" title="Celular">258 829-851-174</a>
+            </li>
+            <li>
+                <a href="http://miniarte.co.mz:2096" title="Login WebMail" target="_blank"><i class="fa fa-user"></i>Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>

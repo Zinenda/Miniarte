@@ -8,7 +8,7 @@ nav {
   }
 
   color: $navbar-font-color;
-  @extend .z-depth-2;
+  @extend .z-depth-1;
   background-color: $primary-color;
   width: 100%;
   height: $navbar-height-mobile;
