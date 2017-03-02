@@ -1,20 +1,21 @@
 <!-- sideNav -->
 <aside>
     <ul id="sideNav" class="side-nav">
+        <img src="{{ site.image }}" alt="{{ site.title }}">
         <li>
-            <a href="#servicos" title="Serviços" class="waves-effect waves-blue">Serviços</a>
+            <a href="/" title="{{ site.title }}" class="waves-effect"><i class="fa fa-fw fa-home"></i>Página Inicial</a>
         </li>
         <li>
-            <a href="#equipamentos" title="Equipamentos" class="waves-effect waves-blue">Equipamentos</a>
+            <a href="/servicos/" title="Serviços" class="waves-effect"><i class="fa fa-fw fa-tasks"></i> Serviços</a>
+        </li>
+        <li>
+            <a href="/portfolio/" title="Portfólio" class="waves-effect"> <i class="fa fa-fw fa-folder"></i>Portfólio</a>
         </li>            
         <li>
-            <a href="#clientes" title="Clientes" class="waves-effect waves-blue">Clientes</a>
+            <a href="#clientes" title="Clientes" class="waves-effect"><i class="fa fa-fw fa-users"></i>Clientes</a>
         </li>
         <li>
-            <a href="{{ site.baseurl }}/portfolio" title="Portfolio" class="waves-effect waves-blue">Portfolio</a>
-        </li>
-        <li>
-            <a href="#sobre" title="Sobre" class="modal-trigger">Sobre</a>
+            <a href="#sobre" title="Sobre" class="modal-trigger waves-effect"><i class="fa fa-fw fa-user"></i>Sobre</a>
         </li>
     </ul>
 </aside>
