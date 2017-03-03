@@ -1,6 +1,6 @@
 ---
-image_path: /assets/img/servicos/traffic-cone-signal-tool-for-traffic.png
+image_path: /assets/img/servicos/estradas.jpeg
 title: Estradas
-description: 
+description: Estamos capacitados para construções, manutenção, asfalto de diversos tipos de estradas. Veja o nosso portfólio.
 level: 2
 ---

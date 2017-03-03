@@ -4,20 +4,28 @@ title: Serviços
 permalink: /servicos/
 ---
 
-<section id="servicos" class="section scrollspy primary-color-light white-text">
+<section class="section">
     <div class="container">
-        <h2 class="center">Serviços</h2><hr class="certificate-o">
-
-        <section class="section row">
+        <h2 class="center-align">Serviços</h2><hr class="certificate">
+        <div class="row">
             {% for image in site.servicos %}
                 <div class="col s12 l4">
-                    <div class="center">
-                        <img src="{{ image.image_path }}" alt="{{ image.title }}">
-                        <h3 class="light">{{ image.title }}</h3>
-                        <p class="justify">{{ image.description }}</p>
+                    <div class="card medium hoverable">
+                        <div class="card-image">
+                            <img src="{{ image.image_path }}" alt="{{ image.title }}">
+                            <span class="card-title">{{ image.title }}</span>
+                        </div>
+                        <div class="card-content">
+                            <p class="justify">{{ image.description }}</p>
+                        </div>
+                        <div class="card-action">
+                            <div class="center">
+                                <a href="mailto:{{ site.email }}" title="Email" class="btn-flat waves-effec"><i class="fa fa-envelope"></i> Contacte-nos</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
-        </section>
+        </div>
     </div>
 </section>
