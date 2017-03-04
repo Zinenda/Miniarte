@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:1212/</loc>
+<loc>/</loc>
 </url>
 <url>
-<loc>http://localhost:1212/perfil/</loc>
+<loc>/perfil/</loc>
 </url>
 <url>
-<loc>http://localhost:1212/portfolio.html</loc>
+<loc>/portfolio/</loc>
 </url>
 <url>
-<loc>http://localhost:1212/servicos/</loc>
+<loc>/servicos/</loc>
 </url>
 </urlset>

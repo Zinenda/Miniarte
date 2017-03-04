@@ -1,34 +1,75 @@
 ---
 layout: default
 title: Portfolio
+permalink: /portfolio/
+
+equipamentos:
+    - image_path: /assets/img/portfolio/equipamentos/camiao_scannia.jpg
+
+    - image_path: /assets/img/portfolio/equipamentos/tratormf.jpg
+
+construcao:
+    - image_path: /assets/img/portfolio/construcao/20131221_121933.jpg
+
+    - image_path: /assets/img/portfolio/construcao/20140918_170337.jpg
+         
+    - image_path: /assets/img/portfolio/construcao/20160706_123628.jpg
+         
+    - image_path: /assets/img/portfolio/construcao/20160722_120256.jpg
+         
+    - image_path: /assets/img/portfolio/construcao/20160722_120331.jpg
+         
+    - image_path: /assets/img/portfolio/construcao/20160722_120401.jpg
+
+carpintaria:
+    - image_path: /assets/img/portfolio/carpintaria/20140327_092409.jpg
+
+    - image_path: /assets/img/portfolio/carpintaria/carteira.jpg
+
+loja:
+    - image_path: "https://lh3.googleusercontent.com/WJAMKwT-7YLji4mhPj-FR9LAwUowqosS6MVrCzEW2FapjYFHFRfcHFmMxvaQAYPXFdG4uF-SdsHPzC16SAcStbzIJzbz8S_oxN5v-T-kRZUrb2MY0XqoWKAucc12fQCbXxxacA"
+
+    - image_path: /assets/img/portfolio/lojas/20140509_130420.jpg
+
 ---
 
-<seaction id="portfolio" class="section">
+
+<section id="equipamentos" class="section">
     <div class="container">
-        <section class="section">
-            <div id="construcao">
-                <div class="row">
-                    {% image_set assets/img/portfolio/construcao --class=materialboxed %}
-                </div>
-            </div>
-
-            <div id="lojas">
-                <div class="row">
-                    {% image_set assets/img/portfolio/lojas --class=materialboxed %}
-                </div>
-            </div>
-
-            <div id="carpintaria">
-                <div class="row">
-                    {% image_set assets/img/portfolio/carpintaria --class=materialboxed %}
-                </div>
-            </div>
-
-            <div id="equipamentos">
-                <div class="row">
-                    {% image_set assets/img/portfolio/equipamentos --class=materialboxed %}
-                </div>
-            </div>
-        </section>
+        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
+            {% for image in page.equipamentos %}
+                <img src="{{ image.image_path }}" alt="{{ image.title }}">
+            {% endfor %}
+        </div>
     </div>
-</seaction>
+</section>
+
+<section id="construcao" class="section">
+    <div class="container">
+        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
+            {% for image in page.construcao %}
+                <img src="{{ image.image_path }}" alt="{{ image.title }}">
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="carpintaria" class="section">
+    <div class="container">
+        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
+            {% for image in page.carpintaria %}
+                <img src="{{ image.image_path }}" alt="{{ image.title }}">
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="loja" class="section">
+    <div class="container">
+        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
+            {% for image in page.loja %}
+                <img src="{{ image.image_path }}" alt="{{ image.title }}">
+            {% endfor %}
+        </div>
+    </div>
+</section>

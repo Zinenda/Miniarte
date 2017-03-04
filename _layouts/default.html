@@ -3,14 +3,27 @@
     <head>
         {% include head.html %}
     </head>
-    <body class="grey lighten-4">
+
+    <body id="top" class="grey lighten-4">
         {% include navbar.html %}
         {% include sidenav.html %}
         <main class="animate-bottom">
             {{ content }}
+
+            {% include sobre.html %}
+
+            {% include fab.html %}
         </main>
-        {% include sobre.html %}
+
         {% include footer.html %}
+        <!-- fonte PT Sans -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+        <!-- scripts jquery -->
         {% include scripts.html %}
+        <!-- Plugin JS Fotorama -->
+        {% if page.title == "Portfolio" %}
+            <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" defer></script>
+        {% endif %}
+        <!-- Google Analytics -->
         {% include ga.html %}
