@@ -1,0 +1,18 @@
+<section class="section white">
+    <div class="container">
+        <h2 class="center-align">Localização</h2><hr class="certificate">
+
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </div>
+
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions= {
+                center: new google.maps.LatLng(-16.1614101,33.5895846), zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpPLZKPx5j8qr8kXDMEX_UWAqpGa-yAFk&callback=myMap"></script>
+</section>
