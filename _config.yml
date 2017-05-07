@@ -23,8 +23,8 @@ author: Ivo Zinenda
 author_email: izinenda@outlook.com
 author_picture: /assets/img/author/zinenda.jpg
 
-image: /assets/img/brand/logotipo.svg
-logo: /assets/img/brand/logo.svg
+image: /assets/img/flyer.jpg
+logo: /assets/img/flyer.jpg
 
 jekyll-minifier:
   exclude: 'sitemap.xml'

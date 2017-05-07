@@ -18,14 +18,15 @@ permalink: /servicos/
                         <div class="card-content">
                             <p class="justify">{{ image.description }}</p>
                         </div>
-                        <div class="card-action">
-                            <div class="center">
-                                <a href="mailto:{{ site.email }}" title="Email" class="btn-flat waves-effec"><i class="fa fa-envelope"></i> Contacte-nos</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             {% endfor %}
+        </div>
+
+        <div class="row">
+            <div class="center">
+                <a href="mailto:{{ site.email }}" title="Email" class="btn-large waves-effect waves-light"><i class="fa fa-envelope"></i> Contacte-nos</a>
+            </div>
         </div>
     </div>
 </section>
