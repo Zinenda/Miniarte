@@ -4,7 +4,11 @@ title: Perfil
 permalink: /perfil/
 ---
 
-
+<header>
+    <div class="perfil-header">
+        <img src="{{ site.image }}" alt="Papel de parede" style="width: 100%">
+    </div>
+</header>
 
 # PERFIL DA EMPRESA
 
