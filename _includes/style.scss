@@ -14,24 +14,6 @@
     background: $primary-color-dark;
 }
 
-// custom
-.page-header {
-    position: relative;
-    height: 100vh;
-    background: {
-        image: url(/assets/img/background.jpg);
-        attachment: fixed;
-        position: center;
-        repeat: no-repeat;
-        size: cover;
-    }
-    .page-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
-}
-
 #portfolio {
     img {
         padding: 0 !important;
