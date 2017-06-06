@@ -6,17 +6,13 @@ description: "Construção Civil & Ferragens"
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-admin
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-email-protect
-  - jekyll-minifier
 
 sass:
   sass_dir: assets/_sass
   style: compressed
-
-port: 1212
 
 # author
 author: Ivo Zinenda
@@ -25,9 +21,6 @@ author_picture: /assets/img/author/zinenda.jpg
 
 image: /assets/img/flyer.jpg
 logo: /assets/img/flyer.jpg
-
-jekyll-minifier:
-  exclude: 'sitemap.xml'
 
 exclude:
   - vendor
@@ -40,3 +33,4 @@ exclude:
 collections:
   members:
   servicos:
+  slider:

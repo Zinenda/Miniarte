@@ -16,14 +16,6 @@
         </main>
 
         {% include footer.html %}
-        <!-- fonte PT Sans -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+        {% include fonts.html %}
         <!-- scripts jquery -->
         {% include scripts.html %}
-        <!-- Plugin JS Fotorama -->
-        {% if page.title == "Portfolio" %}
-            <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" defer></script>
-        {% endif %}
-        <!-- Google Analytics -->
-        {% include ga.html %}
