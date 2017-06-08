@@ -1,0 +1,23 @@
+- link: "/"
+  name: "Página Inicial"
+  icon: "home"
+
+- link: "/servicos/"
+  name: "Serviços"
+  icon: "briefcase"
+
+- link: "/portfolio/"
+  name: "Portfólio"
+  icon: "folder"
+
+- link: "#sobre"
+  name: "Sobre"
+  icon: "user"
+
+- link: "mailto:info@miniarte.co.mz"
+  name: "Contacte-nos"
+  icon: "envelope"
+
+- link: "http://miniarte.co.mz:2096"
+  name: "Web Mail"
+  icon: "envelope-o"

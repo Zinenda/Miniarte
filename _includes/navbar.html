@@ -1,39 +1,16 @@
-<nav class="nav-extended">
-    <div class="nav-wrapper">
-        <a href="/" class="brand-logo center" title="{{ site.title }}">{{ site.title }}</a>
-        <a href="#" class="button-collapse show-on-large" data-activates="sideNav"><i class="fa fa-navicon"></i></a>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
+            <a href="#" class="button-collapse" data-activates="sideNav"><i class="fa fa-2x fa-navicon"></i></a>
 
-        <ul class="right hide-on-med-and-down">
-            <li>
-                <a href="https://fb.com/miniarteconstrucao" title="Facebook"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="mailto:{{ site.email }}" title="Email"><i class="fa fa-envelope"></i></a>
-            </li>
-            <li>
-                <a href="#" title="Celular"><i class="fa fa-tablet"></i>258 843998901</a>
-            </li>
-            <li>
-                <a href="https://emailpro-01.ibername.com:2096/" title="Login WebMail" target="_blank"><i class="fa fa-user"></i>Login</a>
-            </li>
-        </ul>
-    </div>
-    {% if page.title =="Portfolio" %}
-        <div class="nav-content">
-            <ul class="tabs tabs-transparent">
-                <li class="tab">
-                    <a href="#equipamentos" title="Portfolio de Equipamentos">Equipamentos</a>
-                </li>
-                <li class="tab">
-                    <a href="#construcao" title="Portfolio de Construção Civil">Construção Civil</a>
-                </li>
-                <li class="tab">
-                    <a href="#carpintaria" title="Portfolio de Carpintaria">Carpintaria</a>
-                </li>
-                <li class="tab">
-                    <a href="#loja" title="Portfolio de Lojas">Lojas</a>
-                </li>
+            <ul class="right hide-on-med-and-down">
+                {% for item in site.data.nav %}
+                    <li {% if item.link == page.url %} class="active" {% endif %}>
+                        <a href="{{ item.link }}" title="{{ item.name }}" class="waves-effect waves-light"><i class="fa fa-{{ item.icon }}"></i> {{ item.name }}</a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
-    {% endif %}
-</nav>
+    </nav>
+</div>
