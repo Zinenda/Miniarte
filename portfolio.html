@@ -3,12 +3,11 @@ layout: default
 title: Portfolio
 permalink: /portfolio/
 
-equipamentos:
+galeria:
     - image_path: /assets/img/portfolio/equipamentos/camiao_scannia.jpg
 
     - image_path: /assets/img/portfolio/equipamentos/tratormf.jpg
 
-construcao:
     - image_path: /assets/img/portfolio/construcao/20131221_121933.jpg
 
     - image_path: /assets/img/portfolio/construcao/20131221_122105.jpg
@@ -17,54 +16,23 @@ construcao:
          
     - image_path: /assets/img/portfolio/construcao/20160706_123724.jpg
 
-carpintaria:
     - image_path: /assets/img/portfolio/carpintaria/20140327_092409.jpg
 
     - image_path: /assets/img/portfolio/carpintaria/carteira.jpg
 
-loja:
     - image_path: "https://lh3.googleusercontent.com/WJAMKwT-7YLji4mhPj-FR9LAwUowqosS6MVrCzEW2FapjYFHFRfcHFmMxvaQAYPXFdG4uF-SdsHPzC16SAcStbzIJzbz8S_oxN5v-T-kRZUrb2MY0XqoWKAucc12fQCbXxxacA"
 
     - image_path: /assets/img/portfolio/lojas/20140509_130420.jpg
 
 ---
 
-
-<section id="equipamentos" class="section">
-    <div class="container">
-        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
-            {% for image in page.equipamentos %}
-                <img src="{{ image.image_path }}" alt="{{ image.title }}">
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section id="construcao" class="section">
-    <div class="container">
-        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
-            {% for image in page.construcao %}
-                <img src="{{ image.image_path }}" alt="{{ image.title }}">
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section id="carpintaria" class="section">
-    <div class="container">
-        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
-            {% for image in page.carpintaria %}
-                <img src="{{ image.image_path }}" alt="{{ image.title }}">
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section id="loja" class="section">
-    <div class="container">
-        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
-            {% for image in page.loja %}
-                <img src="{{ image.image_path }}" alt="{{ image.title }}">
+<section class="section">
+    <div id="masonry-grid">
+        <div class="row">
+            {% for item in page.galeria %}
+                <div class="col s12 l4">
+                    <img src="{{ item.image_path }}" alt="{{ image.title }}" class="materialboxed">
+                </div>
             {% endfor %}
         </div>
     </div>
