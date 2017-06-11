@@ -1,16 +1,18 @@
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
-            <a href="#" class="button-collapse" data-activates="sideNav"><i class="fa fa-2x fa-navicon"></i></a>
+            <div class="container">
+                <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
+                <a href="#" class="button-collapse" data-activates="sideNav"><i class="fa fa-2x fa-navicon"></i></a>
 
-            <ul class="right hide-on-med-and-down">
-                {% for item in site.data.nav %}
-                    <li {% if item.link == page.url %} class="active" {% endif %}>
-                        <a href="{{ item.link }}" title="{{ item.name }}" class="waves-effect waves-light"><i class="fa fa-{{ item.icon }}"></i> {{ item.name }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
+                <ul class="right hide-on-med-and-down">
+                    {% for item in site.data.nav %}
+                        <li {% if item.link == page.url %} class="active" {% endif %}>
+                            <a href="{{ item.link }}" title="{{ item.name }}" class="waves-effect waves-light"><i class="fa fa-{{ item.icon }}"></i> {{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </nav>
 </div>

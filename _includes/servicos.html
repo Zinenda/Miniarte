@@ -1,27 +1,33 @@
-<section id="servicos" class="section scrollspy primary-color white-text">
+<div class="parallax-container hide-on-small-and-down">
+	<div class="parallax">
+		<img src="/assets/img/parallax/constructions.jpg" alt="Construção Civil">
+	</div>
+
+	<section class="left primary-color white-text">
+		<div class="container">
+			<h2 title="Serviços" class="center-align">Serviços</h2><hr class="certificate-o"><br>
+
+			<p class="center-align">Miniarte Construção Civil, Lda é uma empresa que procura manter seus clientes satisfeitos executando com precisão seus serviços</p>
+			<p class="center-align">Entre eles oferecemos:</p>
+			<p class="center-align">Construção de Edificios</p>
+			<p class="center-align">Manutenção de Estradas</p>
+			<p class="center-align">Carpintaria Mecanizada</p>
+			<p class="center-align">Lojas de ferragens</p>
+			<p class="center-align"><a href="/servicos/" title="Serviços" class="btn-large btn-flat waves-effect white-text" style="border: solid 1px #fff;">Muito Mais</a></p>
+		</div>
+	</section>
+</div>
+
+<section class="section hide-on-med-and-up primary-color white-text">
 	<div class="container">
-		<h2 class="center-align">Serviços</h2><hr class="certificate-o"><br>
-		<div class="row">
-			<div class="col s12 l6">
-				<div class="center-on-small-only">
-					<p title="serviços">Miniarte Construção Civil, Lda é uma empresa que procura manter seus clientes satisfeitos executando com precisão seus serviços.</p>
-					<p>Entre eles oferecemos: </p>
-					<p>Construção de Edificios</p>
-					<p>Manutenção de Estradas</p>
-					<p>Carpintaria Mecanizada</p>
-					<p>Lojas de ferragens</p>
-				</div>
-			</div>
+		<h2 title="Serviços" class="center-align">Serviços</h2><hr class="certificate-o"><br>
 
-			<div class="col s12 l6">
-				{% for image in site.servicos limit: 1 %}
-					<img src="{{ image.image_path }}" alt="icone de construção Civil">
-				{% endfor %}
-			</div>
-		</div>
-
-		<div class="center">
-			<a href="/servicos/" title="Serviços" class="btn-large btn-flat waves-effect white-text" style="border: solid 1px #fff;">Muito Mais</a>
-		</div>
+		<p class="center-align">Miniarte Construção Civil, Lda é uma empresa que procura manter seus clientes satisfeitos executando com precisão seus serviços</p>
+		<p class="center-align">Entre eles oferecemos:</p>
+		<p class="center-align">Construção de Edificios</p>
+		<p class="center-align">Manutenção de Estradas</p>
+		<p class="center-align">Carpintaria Mecanizada</p>
+		<p class="center-align">Lojas de ferragens</p>
+		<p class="center-align"><a href="/servicos/" title="Serviços" class="btn-large btn-flat waves-effect white-text" style="border: solid 1px #fff;">Muito Mais</a></p>
 	</div>
 </section>

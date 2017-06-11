@@ -1,7 +1,3 @@
-- link: "/"
-  name: "Página Inicial"
-  icon: "home"
-
 - link: "/servicos/"
   name: "Serviços"
   icon: "briefcase"
