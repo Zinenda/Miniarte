@@ -12,7 +12,7 @@ permalink: /perfil/
 
 # PERFIL DA EMPRESA
 
-**MINIARTE,** é uma empresa de Construção Civil privada, de capital social de 25.200.000,00Mts e 100% moçambicana; sediada na Cidade de Tete, Av. 25 de Junho, frente ao mercado 1º de Maio com o Telf. 252 22373 Fax. 252 22737, Cel. 825028320/843028320 Email: {{ site.email }}
+**MINIARTE,** é uma empresa de Construção Civil privada 100% moçambicana; sediada na Cidade de Tete, Av. 25 de Junho, frente ao mercado 1º de Maio com o Telf. 252 22373 Fax. 252 22737, Cel. 825028320/843028320 Email: {{ site.email }}
 
 ## Histórico
 
