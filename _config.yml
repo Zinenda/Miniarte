@@ -19,8 +19,8 @@ author: Ivo Zinenda
 author_email: izinenda@outlook.com
 author_picture: /assets/img/author/zinenda.jpg
 
-image: /assets/img/flyer.jpg
-logo: /assets/img/flyer.jpg
+image: /assets/img/logotipo-color.svg
+logo: /assets/img/logotipo.svg
 
 exclude:
   - vendor

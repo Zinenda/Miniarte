@@ -8,4 +8,5 @@ group :jekyll_plugins do
     gem 'jekyll-email-protect'
     gem 'jekyll-seo-tag'
     gem 'jekyll-sitemap'
+    gem 'hawkins'
 end
