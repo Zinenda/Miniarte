@@ -5,7 +5,7 @@ description: "Construção Civil"
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-email-protect
