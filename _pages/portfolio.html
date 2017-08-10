@@ -31,7 +31,7 @@ galeria:
         <div class="row">
             {% for item in page.galeria %}
                 <div class="col s12 l4">
-                    <img src="{{ item.image_path }}" alt="{{ image.title }}" class="materialboxed">
+                    <a href="{{ item.image_path }}" data-lightbox="galeria"><img src="{{ item.image_path }}" alt="{{ image.title }}"></a>
                 </div>
             {% endfor %}
         </div>

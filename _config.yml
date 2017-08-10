@@ -28,6 +28,7 @@ exclude:
   - .gitignore
   - CNAME
   - debug.log
+  - bower_components
 
 # collections
 collections:
