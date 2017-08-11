@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Catálogos"
+permalink: /catalogo/
+---
+
+<header class="primary-color container white-text">
+    <h1 class="center-align">Catalógos</h1>
+    <h2 class="center-align">Portas</h2>
+</header>
+
+<section id="catalogos" class="section">
+    <section id="portas" class="section">
+        <div class="container">
+            <div class="row">
+                {% for item in site.portas %}
+                    <div class="col s6 l4">
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <a href="{{ item.image }}" title="{{ item.title }}" data-lightbox="portas"><img src="{{ item.image }}" alt="{{ item.title }}"></a>
+                                <div class="card-title">{{ item.title }} <br> {{ item.price }}</div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</section>

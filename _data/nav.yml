@@ -2,6 +2,10 @@
   name: "Serviços"
   icon: "briefcase"
 
+- link: "/catalogo/"
+  name: "Catalógos"
+  icon: "cart-plus"
+
 - link: "/portfolio/"
   name: "Portfólio"
   icon: "folder"
