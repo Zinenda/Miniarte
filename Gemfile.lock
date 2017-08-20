@@ -9,6 +9,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.5)
     eventmachine (1.2.5-x64-mingw32)
+    fastimage (2.1.0)
     ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
@@ -16,7 +17,7 @@ GEM
       em-websocket (~> 0.5)
       jekyll (~> 3.1)
     http_parser.rb (0.6.0)
-    jekyll (3.5.1)
+    jekyll (3.5.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -27,6 +28,9 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-cloudinary (1.9.1)
+      fastimage (>= 2.0, < 3.0)
+      jekyll (>= 3.0, < 4.0)
     jekyll-email-protect (1.0.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
@@ -64,6 +68,7 @@ PLATFORMS
 DEPENDENCIES
   hawkins
   jekyll
+  jekyll-cloudinary
   jekyll-email-protect
   jekyll-seo-tag
   jekyll-sitemap

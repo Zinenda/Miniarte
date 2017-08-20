@@ -6,9 +6,9 @@
   name: "Catalógos"
   icon: "cart-plus"
 
-- link: "/portfolio/"
-  name: "Portfólio"
-  icon: "folder"
+- link: "/galeria/"
+  name: "Galeria"
+  icon: "image"
 
 - link: "#sobre"
   name: "Sobre"
