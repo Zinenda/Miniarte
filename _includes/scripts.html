@@ -2,22 +2,5 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js" defer></script>
 <script src="/assets/js/main.min.js" defer></script>
-{% if page.title == "Portfolio" %}
-    <style>
-        {% include_absolute /assets/css/lightbox.css %}
-    </style>
-    <script src="/assets/js/masonry.pkgd.min.js" defer></script>
-    <script src="/assets/js/init.js" defer></script>
-    <script src="/assets/js/lightbox.min.js" defer></script>
-    {% else %}
-        {% if page.title == "Catálogos" %}
-            <style>
-                {% include_absolute /assets/css/lightbox.css %}
-            </style>
-            <script src="/assets/js/masonry.pkgd.min.js" defer></script>
-            <script src="/assets/js/init.js" defer></script>
-            <script src="/assets/js/lightbox.min.js" defer></script>
-        {% endif %}
-{% endif %}
 <!-- Google Analytics -->
 {% include ga.html %}
