@@ -2,7 +2,7 @@
   name: "Serviços"
   icon: "briefcase"
 
-- link: "/catalogo/"
+- link: "/catalogos/"
   name: "Catalógos"
   icon: "cart-plus"
 
