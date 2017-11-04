@@ -33,7 +33,7 @@ exclude:
 # collections
 collections:
   servicos:
-    output: true
+  perfil:
   catalogos:
     output: true
   galeria:
