@@ -1,21 +1,19 @@
-<section class="section primary-color white-text">
+<section class="section primary-color-text white">
 	<div class="row">
 
 		<section class="col s12 m6 l6">
 			<section class="section">
 				<div class="container center">
-					<span class="fa fa-5x fa-tasks"></span>
 					<h2>Serviços</h2>
 					<div class="row">
-						{% for item in site.servicos limit: 3%}
-							<div class="col s12 m4 l4">
+						{% for item in site.servicos limit: 2%}
+							<div class="col s12 m6 l6">
 								<img src="{{ item.icon }}" alt="{{ item.title }}">
-								<h3>{{ item.title }}</h3>
+								<h5>{{ item.title }}</h5>
 							</div>
 						{% endfor %}
-
-						<a href="/servicos" title="Serviços" class="btn waves-effect waves-light">Saiba Mais</a>
 					</div>
+					<a href="/servicos" title="Serviços" class="btn-large waves-effect waves-light">Saiba Mais</a>
 				</div>
 			</section>
 		</section>
