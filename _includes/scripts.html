@@ -1,6 +1,11 @@
 <script src="/assets/js/modernizr-2.8.3.min.js" async defer></script>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js" defer></script>
+<script src="/assets/js/lightbox-plus-jquery.min.js" defer></script>
+<script src="/assets/js/materialize.min.js" defer></script>
 <script src="/assets/js/main.min.js" defer></script>
+
+{% if page.title == "Galeria" %}
+    <script src="/assets/js/masonry.pkgd.min.js" defer></script>
+    <script src="/assets/js/init.js" defer></script>
+{% endif %}
 <!-- Google Analytics -->
 {% include ga.html %}

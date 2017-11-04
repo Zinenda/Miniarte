@@ -14,13 +14,6 @@
     background: $primary-color-dark;
 }
 
-.parallax-container {
-    section {
-        height: 100vh;
-        width: 50vw;
-    }
-}
-
 .page-footer {
     i,
     .btn-flat {
@@ -28,14 +21,21 @@
     }
 }
 
-iframe {
-    max-width: 100%;
-    height: auto;
+.page-header {
+    position: relative;
+    
+    .page-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @import
     "base",
     "hr",
     "animate-bottom",
-    "materialize/materialize"
+    "materialize/materialize",
+    "font-awesome/font-awesome"
 ;

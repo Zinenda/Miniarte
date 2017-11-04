@@ -1,18 +1,27 @@
 <footer class="page-footer white-text">
     <div class="container">
         <div class="row">
-            <div class="col s12 l6">
-                <div class="icon-block center">
-                    <span class="fa fa-5x fa-users"></span>
-                </div>
-                <h2 class="center-align">Quem Somos</h2>
-                <hr>
-                <p class="flow-text center-align">
-                    Temos mais de duas decadas de experiência no mercado, oferecendo serviços  de alta qualidade nas áreas de contrução civil e diversos.
-                </p>
+            <div class="col s12 m4 l4">
+                <h3>Serviços</h3>
+                {% for item in site.servicos %}
+                    <ul>
+                        <li>{{ item.title }}</li>
+                    </ul>
+                {% endfor %}
             </div>
 
-            <div class="col s12 l6">
+            <div class="col s12 m4 l4">
+                <h3>Menu</h3>
+                <ul>
+                    {% for item in site.data.nav %}
+                        <li {% if item.link == page.url %} class="active" {% endif %}>
+                            <a href="{{ item.link }}" title="{{ item.name }}" class="white-text">{{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col s12 m4 l4">
                 {% include contact-form.html %}
             </div>
         </div>
@@ -25,7 +34,7 @@
                     <span class="center">{{ site.title }} - {{ site.description }}</span>
                 </div>
                 <div class="col s4">
-                    <span class="center">&copy;1991 - {{ site.time | date: "%Y" }} Powered by <a href="https://izitag.github.io" target="_blank">IZItag</a></span>
+                    <span class="center">&copy;1994 - {{ site.time | date: "%Y" }} Powered by <a href="https://izitag.github.io" target="_blank">IZItag</a></span>
                 </div>
             </div>
         </div>

@@ -1,3 +1,7 @@
+- link: "#sobre"
+  name: "Sobre"
+  icon: "user"
+
 - link: "/servicos/"
   name: "Serviços"
   icon: "briefcase"
@@ -9,10 +13,6 @@
 - link: "/galeria/"
   name: "Galeria"
   icon: "image"
-
-- link: "#sobre"
-  name: "Sobre"
-  icon: "user"
 
 - link: "mailto:info@miniarte.co.mz"
   name: "Contacte-nos"

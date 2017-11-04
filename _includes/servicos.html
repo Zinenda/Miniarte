@@ -1,33 +1,27 @@
-<div class="parallax-container hide-on-small-and-down">
-	<div class="parallax">
-		<img src="/assets/img/parallax/constructions.jpg" alt="Construção Civil">
-	</div>
+<section class="section primary-color white-text">
+	<div class="row">
 
-	<section class="left primary-color white-text">
-		<div class="container">
-			<h2 title="Serviços" class="center-align">Serviços</h2><hr class="certificate-o"><br>
+		<section class="col s12 m6 l6">
+			<section class="section">
+				<div class="container center">
+					<span class="fa fa-5x fa-tasks"></span>
+					<h2>Serviços</h2>
+					<div class="row">
+						{% for item in site.servicos limit: 3%}
+							<div class="col s12 m4 l4">
+								<img src="{{ item.icon }}" alt="{{ item.title }}">
+								<h3>{{ item.title }}</h3>
+							</div>
+						{% endfor %}
 
-			<p class="center-align">Miniarte Construção Civil, Lda é uma empresa que procura manter seus clientes satisfeitos executando com precisão seus serviços</p>
-			<p class="center-align">Entre eles oferecemos:</p>
-			<p class="center-align">Construção de Edificios</p>
-			<p class="center-align">Manutenção de Estradas</p>
-			<p class="center-align">Carpintaria Mecanizada</p>
-			<p class="center-align">Lojas de ferragens</p>
-			<p class="center-align"><a href="/servicos/" title="Serviços" class="btn-large btn-flat waves-effect white-text" style="border: solid 1px #fff;">Muito Mais</a></p>
-		</div>
-	</section>
-</div>
+						<a href="/servicos" title="Serviços" class="btn waves-effect waves-light">Saiba Mais</a>
+					</div>
+				</div>
+			</section>
+		</section>
 
-<section class="section hide-on-med-and-up primary-color white-text">
-	<div class="container">
-		<h2 title="Serviços" class="center-align">Serviços</h2><hr class="certificate-o"><br>
-
-		<p class="center-align">Miniarte Construção Civil, Lda é uma empresa que procura manter seus clientes satisfeitos executando com precisão seus serviços</p>
-		<p class="center-align">Entre eles oferecemos:</p>
-		<p class="center-align">Construção de Edificios</p>
-		<p class="center-align">Manutenção de Estradas</p>
-		<p class="center-align">Carpintaria Mecanizada</p>
-		<p class="center-align">Lojas de ferragens</p>
-		<p class="center-align"><a href="/servicos/" title="Serviços" class="btn-large btn-flat waves-effect white-text" style="border: solid 1px #fff;">Muito Mais</a></p>
+		<section class="hide-on-small-only col m6 l6">
+			<img src="/assets/img/parallax/parallax-1.jpg" alt="Serviços">
+		</section>
 	</div>
 </section>

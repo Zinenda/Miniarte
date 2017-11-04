@@ -16,11 +16,11 @@ sass:
 
 # author
 author: Ivo Zinenda
-author_email: izinenda@outlook.com
+author_email: izinenda@izitag.site
 author_picture: /assets/img/author/zinenda.jpg
 
-image: /assets/img/logotipo-color.svg
-logo: /assets/img/logotipo.svg
+image: /assets/img/logotipo/blue-logo.svg
+logo: /assets/img/logotipo/white-logo.svg
 
 exclude:
   - vendor
@@ -33,4 +33,28 @@ exclude:
 # collections
 collections:
   servicos:
-  portas:
+    output: true
+  catalogos:
+    output: true
+  galeria:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: collections
+    values:
+      title: ""
+      image: ""
+      description: ""
+      weight: 0
+      layout: page
+
+  - scope:
+      path: ""
+      type: pages
+    values:
+      title: ""
+      image: ""
+      description: ""
+      layout: default

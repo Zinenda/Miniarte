@@ -1,0 +1,33 @@
+<section class="section">
+	<div class="row">
+		<section class="col s12 m6 l6">
+			<section class="section">
+				<div class="container center">
+                    <span class="fa fa-5x fa-map-marker"></span>
+					<h2>Localização</h2>
+					<div class="row">
+                       <p>Avenida 25 de Junho nº 653</p>
+                       <p>Lado oposto ao mercado 1º de Maio</p>
+                       <p>Cidade de Tete - Moçambique</p>
+						<a href="mailto:{{ site.email }}" title="Email" class="btn waves-effect waves-light">Contacte-nos</a>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="hide-on-small-only col m6 l6">
+			<div id="map" style="height: 400px; width: 100%;"></div>
+		</section>
+    </div>
+    
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions= {
+                center: new google.maps.LatLng(-16.1614101,33.5895846), zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpPLZKPx5j8qr8kXDMEX_UWAqpGa-yAFk&callback=myMap" async></script>
+</section>
