@@ -46,8 +46,6 @@ defaults:
     values:
       title: ""
       image: ""
-      description: ""
-      weight: 0
       layout: page
 
   - scope:
@@ -58,3 +56,12 @@ defaults:
       image: ""
       description: ""
       layout: default
+
+  - scope:
+      path: ""
+      type: gallery
+    values:
+      title: ""
+      image: ""
+      images: ""
+      layout: gallery

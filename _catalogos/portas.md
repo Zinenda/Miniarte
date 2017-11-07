@@ -2,6 +2,7 @@
 title: Portas
 image: /assets/img/catalogos/portas/header-door.jpg
 images:
+layout: gallery
 ---
 
 

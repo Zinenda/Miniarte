@@ -1,0 +1,17 @@
+<div id="masonry-grid">
+    {% for item in page.images %}
+        <div class="col s12 m6 l4">
+            <div class="card medium hoverable">
+                <div class="card-image">
+                    <img src="{{ item }}" alt="{{ page.title }}" class="materialboxed">
+                </div>
+                <div class="card-conntent">
+                    {{ item.content }}
+                </div>
+                <div class="card-action">
+                    <a href="mailto:{{ site.email }}" class="btn-large waves-effect waves-light">Encomenda Já!</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
