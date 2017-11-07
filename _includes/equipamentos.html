@@ -7,13 +7,18 @@
         
         <section class="col s12 m6 l6">
 			<section class="section">
-				<div class="container center">
+				<div class="container center ">
                     <span class="fa fa-5x fa-gears"></span>
 					<h2>Equipamentos</h2>
 					<div class="row">
-						<p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae corporis deserunt vero accusantium dolorem mollitia aspernatur nesciunt fuga veritatis quam illum, tempore totam sed adipisci, doloremque, obcaecati expedita harum.
-                        </p>
+						<p class="center">Temos uma vasta gama de equipamentos para oferecer serviços de alta qualidade aos nossos clientes, entre alguns dos nossos equipamentos temos:</p>
+						<p class="center">
+							<ul>
+								{% for item in site.data.equipamentos %}
+									<li>{{ item }}</li>
+								{% endfor %}
+							</ul>
+						</p>
 
 						<a href="/galeria/equipamentos" title="Equipamentos" class="btn waves-effect waves-light">Veja Mais</a>
 					</div>
