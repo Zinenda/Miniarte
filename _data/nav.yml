@@ -10,9 +10,10 @@
   name: "Produtos"
   icon: "cart-plus"
 
-- link: "/portfolio"
+- link: "#"
   name: "Portfólio"
   icon: "image"
+  highlight: true
 
 - link: "mailto:info@miniarte.co.mz"
   name: "Contacte-nos"
