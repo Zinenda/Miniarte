@@ -2,22 +2,22 @@
   name: "Sobre"
   icon: "user"
 
-- link: "/servicos/"
+- link: "/servicos"
   name: "Serviços"
   icon: "briefcase"
 
-- link: "/catalogos/"
-  name: "Catalógos"
+- link: "/produtos"
+  name: "Produtos"
   icon: "cart-plus"
 
-- link: "/galeria/"
-  name: "Galeria"
+- link: "/portfolio"
+  name: "Portfólio"
   icon: "image"
 
 - link: "mailto:info@miniarte.co.mz"
   name: "Contacte-nos"
   icon: "envelope"
 
-- link: "http://miniarte.co.mz:2096"
+- link: "https://emailpro-01.ibername.com:2096/"
   name: "Web Mail"
   icon: "envelope-o"

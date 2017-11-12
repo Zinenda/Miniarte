@@ -34,9 +34,8 @@ exclude:
 collections:
   servicos:
   perfil:
-  catalogos:
-    output: true
-  galeria:
+  produtos:
+  portfolio:
     output: true
 
 defaults:
@@ -59,9 +58,9 @@ defaults:
 
   - scope:
       path: ""
-      type: gallery
+      type: portfolio
     values:
       title: ""
       image: ""
       images: ""
-      layout: gallery
+      layout: portfolio
