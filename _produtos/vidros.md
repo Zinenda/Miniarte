@@ -9,3 +9,4 @@ image: /assets/img/produtos/header-vidros.jpg
 - Espelhos de 3 e 4 milimetros
 - Laminado de 6 milimetros
 - Pacifico 4 milimetros
+- Chapa Acrílica de 3 a 5 milimetros
