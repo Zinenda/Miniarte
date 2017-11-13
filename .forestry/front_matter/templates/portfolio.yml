@@ -16,11 +16,10 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: images
-  label: Images
-  type: text
-  hidden: false
-  default: ''
+- type: image_gallery
+  name: images
+  label: Imagens
+  description: Faça upload de multiplas imagens
 - name: layout
   label: Layout
   type: text
