@@ -1,0 +1,33 @@
+---
+pages:
+- _portfolio/festividades.md
+- _portfolio/equipamentos.md
+- _portfolio/construcoes.md
+- _portfolio/carpintaria.md
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: image
+  label: Image
+  type: text
+  hidden: false
+  default: ''
+- name: images
+  label: Images
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: portfolio
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
