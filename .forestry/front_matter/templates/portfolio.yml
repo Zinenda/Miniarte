@@ -1,9 +1,6 @@
 ---
 pages:
-- _portfolio/construcoes.md
-- _portfolio/festividades.md
-- _portfolio/equipamentos.md
-- _portfolio/carpintaria.md
+- _portfolio/galeria.md
 hide_body: false
 fields:
 - name: title
