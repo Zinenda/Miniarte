@@ -9,4 +9,5 @@ group :jekyll_plugins do
     gem 'jekyll-seo-tag'
     gem 'jekyll-sitemap'
     gem 'hawkins'
+    gem 'jekyll-analytics'
 end
