@@ -1,11 +1,7 @@
 <!-- sideNav -->
 <aside>
     <ul id="sideNav" class="side-nav">
-        {% for item in site.data.nav %}
-            <li {% if item.link == page.url %} class="active" {% endif %}>
-                <a href="{{ item.link }}" title="{{ item.name }}" class="waves-effect {% if item.highlight %}hide {% endif %}"><i class="fa fa-{{ item.icon }}"></i> {{ item.name }}</a>
-            </li>
-        {% endfor %}
+        { include nav.html %%}
         <li class="divider"></li>
         {% for item in site.portfolio %}
             <li>
