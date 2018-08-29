@@ -1,29 +1,12 @@
 {
-  "name": "miniarte",
-  "version": "1.0.0",
-  "description": "Construcao civil e ferragens",
+  "name": "MiniArte",
+  "version": "3.0.0",
+  "description": "Construção Civil",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified.\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zinenda/mcc.git"
-  },
-  "keywords": [
-    "Servicos",
-    "portfolio",
-    "clientes",
-    "e",
-    "equipamentos"
-  ],
-  "author": "Ivo Zinenda",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zinenda/mcc/issues"
-  },
-  "homepage": "https://github.com/Zinenda/mcc#readme",
-  "devDependencies": {
-    "surge": "^0.18.0"
+  "repository": "https://github.com/Zinenda/mcc.git",
+  "author": "Ivo Zinenda <izinenda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "next"
   }
 }

@@ -2,22 +2,22 @@
 title: MINIARTE
 email: info@miniarte.co.mz
 description: "Construção Civil"
+# author
+author: Ivo Zinenda
 
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-email-protect
+  - jekyll-paginate-v2 
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-email-protect
+  - jekyll-analytics
+
 
 sass:
   sass_dir: assets/_sass
   style: compressed
-
-# author
-author: Ivo Zinenda
-author_email: izinenda@izitag.site
-author_picture: /assets/img/author/zinenda.jpg
 
 image: /assets/img/logotipo/blue-logo.svg
 logo: /assets/img/logotipo/white-logo.svg
@@ -29,41 +29,15 @@ exclude:
   - CNAME
   - debug.log
   - bower_components
+  - node_modules
 
 # collections
+collections_dir: collections
 collections:
   servicos:
   perfil:
   produtos:
   portfolio:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: collections
-    values:
-      title: ""
-      image: ""
-      layout: page
-
-  - scope:
-      path: ""
-      type: pages
-    values:
-      title: ""
-      image: ""
-      description: ""
-      layout: default
-
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      title: ""
-      image: ""
-      images: ""
-      layout: portfolio
 
 jekyll_analytics: 
   GoogleAnalytics:          # Add, if you want to track with Google Analytics
