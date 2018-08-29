@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - client
+  branch: master
+
+media_folder: "assets/img/uploads"
+  
+collections:
+  - label: "Cabeçalho"
+    name: "header"
+    folder: "collections/_header"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
+  - label: "Perfil"
+    name: "perfil"
+    folder: "collections/_perfil"
+    create: true
+    fields:
+      - label: "Titulo"
+        name: "title"
+        widget: "select"
+        options: ["Sobre", "Missão", "Visão", "Valores", "Objectivos"]
+      - label: "Icon"
+        name: "icon"
+        widget: "select"
+        options: ["info-circle", "eye", "tasks", "handshake"]
+      - {label: "Descrição", name: "body", widget: "markddown"}
+
+  - label: "Serviços"
+    name: "servicos"
+    folder: "collections/_servicos"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Descrição", name: "body", widget: "markddown"}
+
+  - label: "portfolio"
+    name: "portfolio"
+    folder: "collections/_portfolio"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - label: "Categoria"
+        name: "tag"
+        widget: "select"
+        options: ["transporte", "construcao", "estradas", "carpintaria", "estaleiros", "lojas"]
