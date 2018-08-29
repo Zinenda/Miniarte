@@ -1,9 +1,8 @@
 - link: "#perfil"
   name: "Perfil"
   icon: "info-circle"
-  modal: true
 
-- link: "/servicos"
+- link: "#servicos"
   name: "Serviços"
   icon: "briefcase"
 

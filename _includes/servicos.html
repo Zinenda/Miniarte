@@ -1,25 +1,20 @@
-<section class="section primary-color-text white">
-	<div class="row">
-
-		<section class="col s12 m6 l6">
-			<section class="section">
-				<div class="container center">
-					<h2>Serviços</h2>
-					<div class="row">
-						{% for item in site.servicos limit: 2%}
-							<div class="col s12 m6 l6">
-								<img src="{{ item.icon }}" alt="{{ item.title }}">
-								<h5>{{ item.title }}</h5>
-							</div>
-						{% endfor %}
+<section id="servicos" class="section scrollspy">
+	<div class="container">
+		<div class="row">
+			{% for item in site.servicos %}
+				<div class="col s6 l4">
+					<div class="card primary-color white-text">
+						<div class="center activator waves-effect waves-block waves-light">
+							<span class="fas fa-10x fa-{{ item.icon }}"></span>
+							<p class="bolder center-align">{{ item.title }}</p>
+						</div>
+						<div class="card-reveal justify white primary-color-text">
+							<div class="card-title activator"><i class="fas fa-{{ item.icon }}"></i>{{ item.title }} <i class="fas fa-times right"></i></div>
+						</div>
+						{{ item.content }}
 					</div>
-					<a href="/servicos" title="Serviços" class="btn waves-effect waves-light">Saiba Mais</a>
 				</div>
-			</section>
-		</section>
-
-		<section class="hide-on-small-only col m6 l6">
-			<img src="/assets/img/parallax/parallax-1.jpg" alt="Serviços">
-		</section>
+			{% endfor %}
+		</div>
 	</div>
 </section>
