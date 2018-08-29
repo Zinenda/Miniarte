@@ -34,6 +34,7 @@ exclude:
 # collections
 collections_dir: collections
 collections:
+  header:
   servicos:
   perfil:
   produtos:
