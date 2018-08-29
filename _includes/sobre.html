@@ -1,24 +1,14 @@
-<section id="sobre" class="modal">
-    <div class="modal-content">
-            <div class="container">
-            <div class="row">
-                <div class="center">
-                    <img src="{{ site.image }}" alt="Papel de Parede">
+<section id="sobre" class="modal primary-color-text">
+    <div class="container modal-content">
+        <div class="row">
+            {% for item in site.perfil offset: 1 %}
+                <div class="col s12 l6 ">
+                    <p class="bolder center-align"><i class="fas fa-{{ item.icon }}"></i>{{ item.title }}</p>
+                    <div class="justify">
+                        {{ item.content }}
+                    </div>
                 </div>
-                <p class="flow-text center-on-small-only">
-                    A Miniarte Construção Civil, Lda,
-                    procura manter o padrão de qualidade de acordo com especificações técnicas exigidas em todos trabalhos que executa.
-       
-                </p>
-            </div>
-            <div class="center">
-                <a href="/perfil/" class="btn-large waves-effect waves-light" title="Perfil da Empresa">Saiba Mais</a>
-                <br>
-
-                <a href="/assets/Digitalizado_20170612-1319.pdf" class="btn-large btn-flat waves-effect" style="border: solid 1px #4169E1;" title="Alvará">Alvará</a>
-                <a href="/assets/Digitalizado_20170620-1531.pdf" class="btn-large btn-flat waves-effect" style="border: solid 1px #4169E1;" title="Quitação">Quitação</a>
-                <a href="/assets/Digitalizado_20171024-1018.pdf" class="btn-large btn-flat waves-effect" style="border: solid 1px #4169E1;" title="untitled">Outro documento</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -1,21 +1,17 @@
-- link: "#sobre"
-  name: "Sobre"
-  icon: "user"
+- link: "#perfil"
+  name: "Perfil"
+  icon: "info-circle"
   modal: true
 
 - link: "/servicos"
   name: "Serviços"
   icon: "briefcase"
 
-- link: "/produtos"
-  name: "Produtos"
-  icon: "cart-plus"
-
-- link: "portfolio/galeria"
-  name: "Galeria"
+- link: "portfolio"
+  name: "Portfólio"
   icon: "image"
 
-- link: "mailto:info@miniarte.co.mz"
+- link: "#contactos"
   name: "Contacte-nos"
   icon: "envelope"
 
