@@ -60,3 +60,11 @@ collections:
         name: "tag"
         widget: "select"
         options: ["transporte", "construcao", "estradas", "carpintaria", "estaleiros", "lojas", "equipamentos"]
+
+  - label: "Documentos"
+    name: "documentos"
+    folder: collections/_documentos
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Directorio", name: "path", widget: "file"}
