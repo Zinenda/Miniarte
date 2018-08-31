@@ -1,7 +1,6 @@
 ---
-title: Lojas
-image: /assets/img/servicos/loja.jpg
-icon: /assets/img/servicos/icons/lojas.svg
+title: Lojas de Ferragens
+icon: store-alt
 ---
 
 Temos diversas lojas de materiais de construção nos principas distritos da Provincía de Tete.

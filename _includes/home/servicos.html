@@ -1,18 +1,18 @@
-<section id="servicos" class="section scrollspy">
+<section id="servicos" class="section scrollspy primary-color-text grey lighten-4">
 	<div class="container">
-		<h4 class="center-align"><i class="fas fa-briefcase"></i> Serviços</h4>
-		<div class="row">
+		<h4 class="bolder center-align">
+			<i class="fas fa-briefcase"></i>
+			Serviços
+		</h4>
+
+		<div class="row slick">
 			{% for item in site.servicos %}
-				<div class="col s6 l4">
-					<div class="card">
-						<div class="center activator waves-effect waves-block waves-light">
-							<span class="fas fa-10x fa-{{ item.icon }}"></span>
-							<p class="bolder center-align">{{ item.title }}</p>
-						</div>
-						<div class="card-reveal justify white primary-color-text">
-							<div class="card-title activator"><i class="fas fa-{{ item.icon }}"></i>{{ item.title }} <i class="fas fa-times right"></i></div>
-						</div>
-						{{ item.content }}
+				<div>
+					<div class="card-panel hoverable center">
+						<a href="#{{ item.title |downcase }}" class="modal-trigger primary-color-text">
+							<i class="fas fa-5x fa-{{ item.icon }}"></i>
+							<p class="bolder">{{ item.title }}</p>
+						</a>
 					</div>
 				</div>
 			{% endfor %}

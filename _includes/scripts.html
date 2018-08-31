@@ -9,6 +9,10 @@ crossorigin="anonymous" defer></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="/assets/js/main.js" defer></script>
 
+{% if page.layout == "default" %}
+    {% include slick-carousel.html %}
+{% endif %}
+
 {% if page.layout == "portfolio" %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous">
     <script src="/assets/js/masonry.pkgd.min.js" defer></script>

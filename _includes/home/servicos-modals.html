@@ -1,0 +1,9 @@
+{% for item in site.servicos %}
+    <div id="{{ item.title | downcase }}" class="modal center primary-color-text">
+        <div class="container modal-content">
+            <p class="bolder"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</p>
+
+            {{ item.content }}
+        </div>
+    </div>
+{% endfor %}
