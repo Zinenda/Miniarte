@@ -50,4 +50,4 @@ collections:
       - label: "Categoria"
         name: "tag"
         widget: "select"
-        options: ["transporte", "construcao", "estradas", "carpintaria", "estaleiros", "lojas"]
+        options: ["transporte", "construcao", "estradas", "carpintaria", "estaleiros", "lojas", "equipamentos"]

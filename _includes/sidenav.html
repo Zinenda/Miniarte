@@ -1,12 +1,6 @@
-<!-- sideNav -->
-<aside>
-    <ul id="sideNav" class="side-nav">
+<aside id="sideNav" class="sidenav">
+    <img src="{{ site.image }}" alt="{{ site.title }}" class="responsive-img">
+    <ul>
         {% include nav.html %}
-        <li class="divider"></li>
-        {% for item in site.portfolio %}
-            <li>
-                <a href="{{ item.url }}" class="waves-effect">{{ item.title }}</a>
-            </li>
-        {% endfor %}
     </ul>
 </aside>

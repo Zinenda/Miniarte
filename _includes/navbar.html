@@ -2,19 +2,13 @@
     <nav>
         <div class="nav-wrapper">
             <div class="container">
-                <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
-                <a href="#" class="button-collapse" data-activates="sideNav"><i class="fa fa-2x fa-navicon"></i></a>
+                <a href="/" title="{{ site.title }}" class="brand-logo">{{ site.title }}</a>
+                <a href="#" data-target="sideNav" class="sidenav-trigger">
+                    <i class="fas fa-lg fa-bars"></i>
+                </a>
 
                 <ul class="right hide-on-med-and-down">
                     {% include nav.html %}
-                </ul>
-
-                <ul id="portfolio-dropdown" class="dropdown-content">
-                    {% for item in site.portfolio %}
-                        <li>
-                            <a href="{{ item.url }}" class="waves-effect">{{ item.title }}</a>
-                        </li>
-                    {% endfor %}
                 </ul>
             </div>
         </div>

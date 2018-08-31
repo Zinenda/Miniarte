@@ -4,18 +4,18 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
-    <head>
-        {% include head.html %}
-    </head>
+    {% include head.html %}
 
-    <body id="top" class="grey lighten-4">
+    <body id="top">
         {% include navbar.html %}
-        {% include header.html %}
         {% include sidenav.html %}
+
         <main class="animate-bottom">
+            {% include header.html %}
+
             {{ content }}
 
-            {% include sobre.html %}
+            {% include modals.html %}
         </main>
 
         {% include footer.html %}

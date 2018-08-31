@@ -1,0 +1,9 @@
+{% for item in site.perfil offset: 1 %}
+    <div id="{{ item.title | downcase }}" class="modal">
+        <div class="container modal-content center">
+            <p class="bolder"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</p>
+
+            {{ item.content }}
+        </div>
+    </div>
+{% endfor %}

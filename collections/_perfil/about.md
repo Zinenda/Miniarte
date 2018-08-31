@@ -14,10 +14,3 @@ Especializada em vários ramos de Engenheria Civil:
 - Estradas e Pontes
 - Carpintaria
 
-Detemos várias lojas de ferragens na província de Tete, especificamente:
-
-- Cidade de Tete
-- Distrito de Cahora Bassa – Chitima
-- Vila Úlongue - Angônia
-- Distrito de Chiuta
-

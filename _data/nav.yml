@@ -1,19 +1,20 @@
 - link: "#perfil"
-  name: "Perfil"
+  title: "Perfil"
   icon: "info-circle"
 
 - link: "#servicos"
-  name: "Serviços"
+  title: "Serviços"
   icon: "briefcase"
 
 - link: "portfolio"
-  name: "Portfólio"
+  title: "Portfólio"
   icon: "image"
 
-- link: "#contactos"
-  name: "Contacte-nos"
+- link: "#contacte-nos"
+  title: "Contacte-nos"
   icon: "envelope"
+  modal: true
 
 - link: "https://emailpro-01.ibername.com:2096/"
-  name: "Web Mail"
-  icon: "envelope-o"
+  title: "Web Mail"
+  icon: "envelope-open"

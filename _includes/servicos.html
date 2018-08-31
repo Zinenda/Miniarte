@@ -1,9 +1,10 @@
 <section id="servicos" class="section scrollspy">
 	<div class="container">
+		<h4 class="center-align"><i class="fas fa-briefcase"></i> Serviços</h4>
 		<div class="row">
 			{% for item in site.servicos %}
 				<div class="col s6 l4">
-					<div class="card primary-color white-text">
+					<div class="card">
 						<div class="center activator waves-effect waves-block waves-light">
 							<span class="fas fa-10x fa-{{ item.icon }}"></span>
 							<p class="bolder center-align">{{ item.title }}</p>
