@@ -15,7 +15,7 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
-
+  
   - label: "Perfil"
     name: "perfil"
     folder: "collections/_perfil"
@@ -29,6 +29,15 @@ collections:
         name: "icon"
         widget: "select"
         options: ["info-circle", "eye", "tasks", "handshake"]
+      - {label: "Descrição", name: "body", widget: "markddown"}
+
+  - label: "Sobre"
+    name: "sobre"
+    folder: "collections/_sobre"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Icone", name: "icon", widget: "string"}
       - {label: "Descrição", name: "body", widget: "markddown"}
 
   - label: "Serviços"
