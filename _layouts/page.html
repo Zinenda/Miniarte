@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="row">
+    <div id="masonry-grid">
+        {% for item in paginator.posts %}
+            <div class="col s6 l3 no-padding">
+                <a href="{{ item.image }}" title="{{ item.title }}" data-lightbox="portfolio" data-title="{{ item.title }}">
+                    <img src="{{ item.image }}" alt="{{ item.title }}" class="responsive-img hoverable">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% include pagination.html %}
