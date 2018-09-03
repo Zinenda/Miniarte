@@ -1,12 +1,12 @@
 <style>
     .page-header {
         position: relative;
+        height: 100vh;
         background-image: url("{% for item in site.header reversed limit: 1 %}{{ item.image }}{% endfor %}");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 100vh;
+        background-repeat: no-repeat;
     }
 
     .page-title {
@@ -14,12 +14,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
     }
 </style>
 
 <header class="page-header">
     <div class="page-title">
-        <img src="{{ site.logo }}" alt="{{ site.title }}" style="width: 50%;">
+        <img src="/assets/img/logotipo/logo.png" alt="{{ site.title }}" class="responsive-img">
         {% unless page.layout == "default" %}
             <h1 class="bolder">{{ page.title }}</h1>
         {% endunless %}
