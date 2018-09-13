@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m4 l4">
-                <h3>Serviços</h3>
+                <h5>Serviços</h5>
                 {% for item in site.servicos %}
                     <ul>
                         <li>{{ item.title }}</li>
@@ -11,7 +11,7 @@
             </div>
 
             <div class="col s12 m4 l4">
-                <h3>Menu</h3>
+                <h5>Menu</h5>
                 <ul>
                     {% for item in site.data.nav %}
                         <li {% if item.link == page.url %} class="active" {% endif %}>
