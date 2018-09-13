@@ -6,10 +6,12 @@
                 {% for item in site.servicos limit: 2%}
 					<div class="col s6">
 					    <img src="{{ item.icon }}" alt="{{ item.title }}">
-						<p>{{ item.title }}</p>
+						<p class="center-align">{{ item.title }}</p>
 					</div>
                 {% endfor %}
-                <a href="/servicos" title="Serviços" class="btn waves-effect waves-light">Saiba Mais</a>
+		    <div class="center">
+                	<a href="/servicos" title="Serviços" class="btn waves-effect waves-light">Saiba Mais</a>
+		    </div>
             </div>
         </div>
 
