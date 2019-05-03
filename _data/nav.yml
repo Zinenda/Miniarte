@@ -6,6 +6,10 @@
   title: "Serviços"
   icon: "briefcase"
 
+- link: "#equipamentos"
+  title: "Equipamentos"
+  icon: "truck"
+
 - link: "#portfolio"
   title: "Portfólio"
   icon: "image"
