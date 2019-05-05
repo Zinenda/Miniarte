@@ -1,0 +1,32 @@
+.page-header {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/parallax/construtores.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .page-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .page-header {
+        background-attachment: scroll;
+
+        .page-title {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

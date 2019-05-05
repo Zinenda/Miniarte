@@ -1,28 +1,7 @@
-<style>
-    .page-header {
-        position: relative;
-        height: 100vh;
-        background-image: url("{% for item in site.header reversed limit: 1 %}{{ item.image }}{% endfor %}");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-
-    .page-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-</style>
-
-<header class="page-header">
+<header class="page-header center">
     <div class="page-title">
-        <img src="/assets/img/logotipo/logo.png" alt="{{ site.title }}" class="responsive-img">
-        {% unless page.layout == "default" %}
-            <h1 class="bolder">{{ page.title }}</h1>
-        {% endunless %}
+        <img src="{{ site.image }}" alt="{{ site.title }}">
+        <p class="bolder white-text">Construção Civil, Carpintaria & Aluguel de Equipamentos</p>
+        {% include cta.html %}
     </div>
 </header>

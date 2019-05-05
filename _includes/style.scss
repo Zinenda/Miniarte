@@ -34,8 +34,14 @@
     font-weight: bolder;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @import
     "base",
+    "page-header",
     "animate-bottom",
     "materialize/materialize"
 ;
