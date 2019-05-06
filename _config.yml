@@ -34,7 +34,7 @@ exclude:
 # collections
 collections_dir: collections
 collections:
-  header:
+  slider:
   servicos:
   perfil:
   sobre:

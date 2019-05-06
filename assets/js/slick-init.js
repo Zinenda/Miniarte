@@ -1,3 +1,5 @@
+$('.slick-header').slick();
+
 $('.slick').slick({
     dots: true,
     infinite: false,
@@ -32,4 +34,4 @@ $('.slick').slick({
       // settings: "unslick"
       // instead of a settings object
     ]
-  });
+});

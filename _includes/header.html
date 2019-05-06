@@ -1,7 +1,18 @@
 <header class="page-header center">
-    <div class="page-title">
-        <img src="{{ site.image }}" alt="{{ site.title }}">
-        <p class="bolder white-text">Construção Civil, Carpintaria & Aluguel de Equipamentos</p>
-        {% include cta.html %}
+    <div class="container">
+        <div class="row slick-header">
+            {% for item in site.slider limit: 4 %}
+                <div>
+                    <div class="col s12 l6">
+                        <h4>{{ item.title }}</h4>
+                        <p>{{ item.description }}</p>
+                    </div>
+
+                    <div class="col s12 l6">
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </header>

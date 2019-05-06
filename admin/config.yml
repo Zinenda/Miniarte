@@ -3,14 +3,14 @@ backend:
   accept_roles:
     - admin
     - client
-  branch: master
+  branch: version3
 
 media_folder: "assets/img/uploads"
   
 collections:
-  - label: "Cabeçalho"
-    name: "header"
-    folder: "collections/_header"
+  - label: "Slider"
+    name: "slider"
+    folder: "collections/_slider"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
