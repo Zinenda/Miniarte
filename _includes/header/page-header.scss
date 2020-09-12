@@ -1,0 +1,16 @@
+.page-header {
+    height: 100vh;
+    position: relative;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .page-header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

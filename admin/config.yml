@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  use_large_media_transforms_in_media_library: false
+
+media_folder: 'assets/uploads'
+
+logo_url: 'izitech.co/assets/img/IZILogotipo.svg'
+
+collections:
+  - label: "Sobre"
+    name: "sobre"
+    folder: "collections/_sobre"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+
+  - label: "Serviços"
+    name: "servicos"
+    folder: "collections/_servicos"
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Ícone", name: "icon", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+
+  - label: "Portfólio"
+    name: "portfolio"
+    folder: "collections/_portfolio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - label: "Categoria"
+        name: "category"
+        widget: "select"
+        options: ["construcao", "estradas", "carpintaria", "pintura", "electricidade", "canalizacao", "lojas"]
+
+  - label: "Clientes"
+    name: "clientes"
+    folder: "collections/_clientes"
+    create: true
+    fields:
+      - {label: "Clientes", name: "title", default: "Clientes", widget: "string"}
+      - label: "Cliente"
+        name: "client"
+        widget: "list"
+        fields:
+          - {label: "Empresa", name: "company", widget: "string"}
+          - {label: "Logotipo", name: "image", widget: "image"}

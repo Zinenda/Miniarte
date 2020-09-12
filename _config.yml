@@ -3,34 +3,27 @@ title: MINIARTE
 email: info@miniarte.co.mz
 description: "Construção Civil"
 
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-email-protect
-
-sass:
-  sass_dir: assets/_sass
-  style: compressed
-
 # author
 author: Ivo Zinenda
-author_email: izinenda@izitag.site
-author_picture: /assets/img/author/zinenda.jpg
 
-image: /assets/img/logotipo/blue-logo.svg
-logo: /assets/img/logotipo/white-logo.svg
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
 
 exclude:
-  - vendor
+  - Gemfile
   - Gemfile.lock
-  - .gitignore
-  - CNAME
-  - debug.log
   - bower_components
+  - node_modules
+  - vendor
 
-# collections
+# Collections
+collections_dir: collections
 collections:
   servicos:
   perfil:
@@ -38,34 +31,27 @@ collections:
   portfolio:
     output: true
 
-defaults:
-  - scope:
-      path: ""
-      type: collections
-    values:
-      title: ""
-      image: ""
-      layout: page
+# Assets
+sass:
+  sass_dir: assets/_sass
+  style: compressed
 
-  - scope:
-      path: ""
-      type: pages
-    values:
-      title: ""
-      image: ""
-      description: ""
-      layout: default
+image: /assets/img/logotipo/blue-logo.svg
+logo: /assets/img/logotipo/white-logo.svg
 
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      title: ""
-      image: ""
-      images: ""
-      layout: portfolio
 
 jekyll_analytics: 
   GoogleAnalytics:          # Add, if you want to track with Google Analytics
     id: UA-89983616-1          # Required - replace with your tracking id
     anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 20
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2

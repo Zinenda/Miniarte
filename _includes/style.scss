@@ -18,28 +18,8 @@
     background: $primary-color-dark;
 }
 
-.page-footer {
-    i,
-    .btn-flat {
-        color: #fff;
-    }
-}
-
-.page-header {
-    position: relative;
-    
-    .page-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
 @import
     "base",
-    "hr",
     "animate-bottom",
-    "materialize/materialize",
-    "font-awesome/font-awesome"
+    "materialize/materialize"
 ;
