@@ -1,0 +1,32 @@
+<section class="section no-pad primary-color white-text center">
+    <h2><a href="#cotacao" class="white-text modal-trigger">Peça uma Cotação</a></h2>
+</section>
+
+<div id="cotacao" class="modal">
+    <div class="container">
+        <form method="post" netlify name="Cotacao">
+            {% include contact-form/name.html %}
+
+            {% include contact-form/email.html %}
+
+            {% include contact-form/phone.html %}
+
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-edit prefix"></i>
+                    <select name="Assunto" id="subject" class="validate" validate>
+                        <option value="" disabled selected>Assunto a Tratar</option>
+
+                        {% for item in site.servicos %}
+                            <option value="{{ forloop.index }}">{{ item.title }}</option>
+                        {% endfor %}
+                    </select>
+
+                    <label for="subject">Assunto</label>
+                </div>
+            </div>
+
+            {% include contact-form/submit.html %}
+        </form>
+    </div>
+</div>

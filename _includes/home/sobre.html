@@ -1,0 +1,40 @@
+<section class="section scrollspy" id="sobre">
+    <div class="section-grid">
+        <img src="" alt="">
+
+        <div class="container">
+            <div class="glider-contain">
+                <div class="glider">
+                    {% for item in site.sobre %}
+                        <h4 class="text-title primary-color-text">{{ item.title }}</h4>
+
+                        <article class="light">
+                            {{ item.content }}
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color: #444;">
+    <div class="container center">
+        <div class="section-grid">
+            <article>
+                <h4 class="primary-color-text">+150</h4>
+                <p class="bold white-text">Trabalhadores</p>
+            </article>
+
+            <article>
+                <h4 class="primary-color-text">+300</h4>
+                <p class="bold white-text">Projectos Concluídos</p>
+            </article>
+
+            <article>
+                <h4 class="primary-color-text">+{{ site.time | date: "%Y" | minus: 1994 }}</h4>
+                <p class="bold white-text">Anos de Experiência</p>
+            </article>
+        </div>
+    </div>
+</section>

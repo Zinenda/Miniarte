@@ -1,41 +1,40 @@
 <footer class="page-footer white-text">
     <div class="container">
-        <div class="row">
-            <div class="col s12 m4 l4">
-                <h5>Serviços</h5>
-                {% for item in site.servicos %}
-                    <ul>
-                        <li>{{ item.title }}</li>
-                    </ul>
-                {% endfor %}
-            </div>
+        <div class="section-grid">
+            <article>
+                <h5 class="text-title">{{ site.title }}</h5>
 
-            <div class="col s12 m4 l4">
-                <h5>Menu</h5>
+                {% for item in site.sobre limit: 1 %}
+                    <div class="light">
+                        {{ item.content }}
+                    </div>
+                {% endfor %}
+            </article>
+
+            <article>
+                <h5 class="text-title">Serviços</h5>
+
                 <ul>
-                    {% for item in site.data.nav %}
-                        <li {% if item.link == page.url %} class="active" {% endif %}>
-                            <a href="{{ item.link }}" title="{{ item.name }}" class="white-text">{{ item.name }}</a>
-                        </li>
+                    {% for item in site.servicos %}
+                        <li>{{ item.title }}</li>
                     {% endfor %}
                 </ul>
-            </div>
+            </article>
 
-            <div class="col s12 m4 l4">
-                {% include contact-form.html %}
-            </div>
+            <article>
+                <h5 class="text-title">Siga-nos</h5>
+
+                {% include social.html %}
+            </article>
         </div>
     </div>
 
     <div class="footer-copyright">
         <div class="container">
-            <div class="row">
-                <div class="col s8">
-                    <span class="center">{{ site.title }} - {{ site.description }}</span>
-                </div>
-                <div class="col s4">
-                    <span class="center">&copy;1994 - {{ site.time | date: "%Y" }} Powered by <a href="https://izitag.github.io" target="_blank">IZItag</a></span>
-                </div>
+            <div class="section-grid">
+                <span>&copy; {{ site.time | date: "%Y" }} Todos Direitos Reservados a {{ site.title }} - {{ site.description }}</span>
+
+                <span>Designed by <a href="https://izitech.co" title="IZITech" rel="author" target="_blank" class="white-text">IZITech</a></span>
             </div>
         </div>
     </div>

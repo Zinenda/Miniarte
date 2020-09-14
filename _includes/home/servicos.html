@@ -1,0 +1,18 @@
+<section id="servicos" class="section scrollspy">
+    <div class="container">
+        <h4 class="center primary-color-text text-title">Nossos Serviços</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde recusandae, cupiditate rerum suscipit sapiente quaerat ab ullam adipisci. Dolores, earum?</p>
+        
+        <section class="section section-grid">
+            {% for item in site.servicos %}
+                <article class="primary-color-text">
+                    <span class="fa fa-5x fa-{{ item.icon }}"></span>
+
+                    <h5 class="text-title">{{ item.icon }}</h5>
+
+                    <div class="light">{{ item.content }}</div>
+                </article>
+            {% endfor %}
+        </section>
+    </div>
+</section>
