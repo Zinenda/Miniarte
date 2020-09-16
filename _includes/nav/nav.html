@@ -1,5 +1,5 @@
 {% for item in site.data.nav %}
-    <li {% if item.link == page.url %} class="active" {% endif %}>
-        <a href="{{ item.link }}" title="{{ item.name }}" class="waves-effect waves-light {% if item.highlight %}dropdown-button {% endif %} {% if item.modal %}modal-trigger{% endif %}" {% if item.highlight %}data-activates="portfolio-dropdown"{% endif %}><i class="fa fa-{{ item.icon }}"></i> {{ item.name }}</a>
+    <li>
+        <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary primary-color-text">{{ item.title }}</a>
     </li>
 {% endfor %}

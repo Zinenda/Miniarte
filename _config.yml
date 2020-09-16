@@ -36,8 +36,8 @@ sass:
   sass_dir: assets/_sass
   style: compressed
 
-image: /assets/img/logotipo/blue-logo.svg
-logo: /assets/img/logotipo/white-logo.svg
+image: /assets/img/logotipo/logotipoMiniarte.svg
+logo: /assets/img/logotipo/logotipominiartewhite.svg
 
 
 jekyll_analytics: 

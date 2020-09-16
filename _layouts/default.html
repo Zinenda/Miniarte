@@ -8,15 +8,14 @@ layout: compress
         {% include head.html %}
     </head>
 
-    <body id="top" class="grey lighten-4">
-        {% include navbar.html %}
-        {% include sidenav.html %}
-        <main class="animate-bottom">
+    <body>
+        {% include nav/navbar.html %}
+        <main id="top" class="animate-bottom section no-pad scrollspy">
             {{ content }}
 
-            {% include sobre.html %}
+            {% include contact-form/contact-modal.html %}
         </main>
 
         {% include footer.html %}
         <!-- scripts jquery -->
-        {% include scripts.html %}
+        {% include scripts/scripts.html %}

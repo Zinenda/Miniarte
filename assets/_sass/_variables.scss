@@ -132,12 +132,6 @@ $dropdown-color: $secondary-color !default;
 $dropdown-item-height: 50px !default;
 
 
-/* 9. Fonts
-   ========================================================================== */
-
-$roboto-font-path: "../fonts/roboto/" !default;
-
-
 /* 10. Forms
    ========================================================================== */
 
@@ -216,17 +210,17 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
 /* 13. Navigation Bar
    ========================================================================== */
 
-$navbar-height: 64px !default;
-$navbar-height-mobile: 56px !default;
+$navbar-height: 80px !default;
+$navbar-height-mobile: 80px !default;
 $navbar-font-size: 1rem !default;
-$navbar-font-color: #fff !default;
+$navbar-font-color: $primary-color !default;
 $navbar-brand-font-size: 2.1rem !default;
 
 /* 14. Side Navigation
    ========================================================================== */
 
 $sidenav-font-size: 14px !default;
-$sidenav-font-color: rgba(0,0,0,.87) !default;
+$sidenav-font-color: rgba($color: $primary-color, $alpha: 0.87) !default;
 $sidenav-bg-color: #fff !default;
 $sidenav-padding: 16px !default;
 $sidenav-item-height: 48px !default;
@@ -285,7 +279,7 @@ $h6-fontsize: 1rem !default;
 /* 21. Footer
    ========================================================================== */
 
-$footer-bg-color: $primary-color !default;
+$footer-bg-color: #333 !default;
 
 
 /* 22. Flow Text

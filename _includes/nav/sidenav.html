@@ -1,12 +1,10 @@
-<!-- sideNav -->
-<aside>
-    <ul id="sideNav" class="side-nav">
-        {% include nav.html %}
-        <li class="divider"></li>
-        {% for item in site.portfolio %}
-            <li>
-                <a href="{{ item.url }}" class="waves-effect">{{ item.title }}</a>
-            </li>
-        {% endfor %}
+<aside id="sideNav" class="sidenav">
+    <a href="/">
+        {% include nav/logotipoMiniarte.svg %}
+    </a>
+    <hr>
+
+    <ul>
+        {% include nav/nav.html %}
     </ul>
 </aside>

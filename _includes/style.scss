@@ -1,9 +1,63 @@
 @charset "UTF-8";
 
-@import "variables";
+// IMPORTED
+@import
+    "variables",
+    "animate-bottom",
+    "page-header",
+    "mygrid",
+    "materialize/materialize"
+;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+main {
+    flex: 1 0 auto;
+}
+
+nav {
+    a.brand-logo {
+        svg {
+            height: 5rem;
+            padding: 1rem 0;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin: 0;
+}
+
+.prefix {
+    color: $primary-color;
+}
+
+.inline-list {
+    display: inline-flex;
+}
+
+.underline {
+    text-decoration: underline;
+}
 
 .primary-color {
-    background: $primary-color;
+    background-color: $primary-color;
 }
 
 .primary-color-text {
@@ -14,12 +68,58 @@
     background: $primary-color-light;
 }
 
+.primary-color-light-text {
+    color: $primary-color-light;
+}
+
 .primary-color-dark {
     background: $primary-color-dark;
 }
 
-@import
-    "base",
-    "animate-bottom",
-    "materialize/materialize"
-;
+.primary-color-dark-text {
+    color: $primary-color-dark;
+}
+
+.secondary-color {
+    background: $secondary-color;
+}
+
+.secondary-color-text {
+    color: $secondary-color;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+i, em {
+    font-style: italic;
+}
+
+.text-title {
+    padding: 2rem 0;
+}
+
+.waves-effect.waves-primary .waves-ripple {
+    background-color: rgba($color: $primary-color, $alpha: 0.65);
+}
+
+#clientes {
+    img {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        width: 80px;
+    }
+}
