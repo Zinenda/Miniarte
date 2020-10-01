@@ -34,14 +34,14 @@
 // 1. Colors
 // ==========================================================================
 
-$primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color: #4183D7 !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("teal", "lighten-1") !default;
+$secondary-color: #1A3457 !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
+$link-color: #3162A3 !default;
 
 
 // 2. Badges
@@ -242,9 +242,9 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
 // 13. Navigation Bar
 // ==========================================================================
 
-$navbar-height: 64px !default;
+$navbar-height: 80px !default;
 $navbar-line-height: $navbar-height !default;
-$navbar-height-mobile: 56px !default;
+$navbar-height-mobile: 80px !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
 $navbar-font-size: 1rem !default;
 $navbar-font-color: #fff !default;

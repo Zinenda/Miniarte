@@ -1,5 +1,12 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.slider').slider({
+        height: 640
+    });
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
     $('.scrollspy').scrollSpy();
     $('.tooltipped').tooltip();
     $('.fixed-action-btn').floatingActionButton();

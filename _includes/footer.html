@@ -1,18 +1,10 @@
 <footer class="page-footer white-text">
     <div class="container">
         <div class="section-grid">
-            <article>
-                <h5 class="text-title">{{ site.title }}</h5>
-
-                {% for item in site.sobre limit: 1 %}
-                    <div class="light">
-                        {{ item.content }}
-                    </div>
-                {% endfor %}
-            </article>
+            <h4 class="text-title">{{ site.title }} - {{ site.description }}</h4>
 
             <article>
-                <h5 class="text-title">Serviços</h5>
+                <h6 class="text-title">Serviços</h6>
 
                 <ul>
                     {% for item in site.servicos %}
@@ -22,7 +14,7 @@
             </article>
 
             <article>
-                <h5 class="text-title">Siga-nos</h5>
+                <h6 class="text-title">Siga-nos</h6>
 
                 {% include social.html %}
             </article>

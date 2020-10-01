@@ -1,40 +1,86 @@
-<section class="section scrollspy" id="sobre">
-    <div class="section-grid">
-        <img src="" alt="">
 
-        <div class="container">
-            <div class="glider-contain">
-                <div class="glider">
-                    {% for item in site.sobre %}
-                        <h4 class="text-title primary-color-text">{{ item.title }}</h4>
+<div id="sobre" class="section no-pad scrollspy" style="padding-top: 2rem;">
+    <div class="container">
+        <div class="section-grid-no-gap">
+            <img src="/assets/img/IMG_2103.jpg" alt="">
+    
+            <div class="primary-color white-text">
+                <div class="container">
+                    <div class="carousel carousel-slider">
+                        {% for item in site.sobre %}
+                            <div class="carousel-item">
+                                <h4 class="text-title">{{ item.title }}</h4>
+    
+                                <article class="light">
+                                    {{ item.content }}
+                                </article>
+                            </div>
+                        {% endfor %}
+                    </div>
 
-                        <article class="light">
-                            {{ item.content }}
-                        </article>
-                    {% endfor %}
+                    <a href="#maisSobreModal" class="btn modal-trigger waves-effect waves-light">Saiba Mais</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section style="background-color: #444;">
-    <div class="container center">
-        <div class="section-grid">
-            <article>
-                <h4 class="primary-color-text">+150</h4>
-                <p class="bold white-text">Trabalhadores</p>
-            </article>
+<!-- Mais Sobre Modal-->
 
-            <article>
-                <h4 class="primary-color-text">+300</h4>
-                <p class="bold white-text">Projectos Concluídos</p>
-            </article>
+<div id="maisSobreModal" class="modal">
+    <div class="modal-content">
+        <div class="container">
+            {% for item in site.perfil reversed %}
+                <h4 class="text-title primary-color-text">{{ item.title }}</h4>
 
-            <article>
-                <h4 class="primary-color-text">+{{ site.time | date: "%Y" | minus: 1994 }}</h4>
-                <p class="bold white-text">Anos de Experiência</p>
-            </article>
+                <article class="light">
+                    {{ item.content }}
+                </article>
+            {% endfor %}
         </div>
     </div>
-</section>
+</div>
+
+<!-- Informacoes adicionais -->
+
+<style>
+    #maisInfo {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url({{ page.image }}?nf_resize=fit&h=640);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        #maisInfo {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url({{ page.image }}?nf_resize=fit&w=1920);
+            background-attachment: fixed;
+        }
+    }
+</style>
+
+<div id="maisInfo" class="section no-pad center container">
+    <div class="section">
+        <ul class="section-grid">
+            <li>
+                <h4 class="primary-color-text">+150</h4>
+                <br>
+                <h6 class="white-text">TRABALHADORES</h6>
+            </li>
+
+            <li>
+                <h4 class="primary-color-text">+300</h4>
+                <br>
+                <h6 class="white-text">PROJECTOS CONCLUÍDOS</h6>
+            </li>
+
+            <li>
+                <h4 class="primary-color-text">+{{ site.time | date: "%Y" | minus: 1994 }}</h4>
+                <br>
+                <h6 class="white-text">ANOS DE EXPERIÊNCIA</h6>
+            </li>
+        </ul>
+    </div>
+</div>

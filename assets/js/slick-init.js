@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$('.sobre-carousel').slick();
+
     $('.slick-clientes').slick({
 		dots: false,
 		lazyLoad: 'ondemand',

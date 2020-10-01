@@ -25,11 +25,11 @@ exclude:
 # Collections
 collections_dir: collections
 collections:
-  servicos:
+  sobre:
   perfil:
+  servicos:
   produtos:
   portfolio:
-    output: true
 
 # Assets
 sass:

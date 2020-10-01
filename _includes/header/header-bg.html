@@ -6,80 +6,40 @@
 </style>
 
 {% if page.layout == "default" %}
-    {% for item in site.covers limit: 1 %}
-        <style>
+    <style>
+        .page-header {
+            background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&h=640);
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
             .page-header {
-                background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ item.image }}?nf_resize=fit&h=640);
+                background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&h=768);
             }
+        }
 
-            /* Small devices (portrait tablets and large phones, 600px and up) */
-            @media only screen and (min-width: 600px) {
-                .page-header {
-                    background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ item.image }}?nf_resize=fit&h=768);
-                }
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .page-header {
+                background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&w=1024);
+                background-attachment: fixed;
             }
+        } 
 
-            /* Medium devices (landscape tablets, 768px and up) */
-            @media only screen and (min-width: 768px) {
-                .page-header {
-                    background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ item.image }}?nf_resize=fit&w=1024);
-                    background-attachment: fixed;
-                }
-            } 
-
-            /* Large devices (laptops/desktops, 992px and up) */
-            @media only screen and (min-width: 992px) {
-                .page-header {
-                    background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ item.image }}?nf_resize=fit&h=992);
-                    background-attachment: fixed;
-                }
-            } 
-
-            /* Extra large devices (large laptops and desktops, 1200px and up) */
-            @media only screen and (min-width: 1200px) {
-                .page-header {
-                    background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ item.image }}?nf_resize=fit&w=1920);
-                    background-attachment: fixed;
-                }
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .page-header {
+                background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&h=992);
+                background-attachment: fixed;
             }
-        </style>
-    {% endfor %}
+        } 
 
-        {% elsif page.layout == "page" %}
-            <style>
-                .page-header {
-                    background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&h=640);
-                }
-
-                /* Small devices (portrait tablets and large phones, 600px and up) */
-                @media only screen and (min-width: 600px) {
-                    .page-header {
-                        background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&h=768);
-                    }
-                }
-
-                /* Medium devices (landscape tablets, 768px and up) */
-                @media only screen and (min-width: 768px) {
-                    .page-header {
-                        background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&w=1024);
-                        background-attachment: fixed;
-                    }
-                } 
-
-                /* Large devices (laptops/desktops, 992px and up) */
-                @media only screen and (min-width: 992px) {
-                    .page-header {
-                        background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&h=992);
-                        background-attachment: fixed;
-                    }
-                } 
-
-                /* Extra large devices (large laptops and desktops, 1200px and up) */
-                @media only screen and (min-width: 1200px) {
-                    .page-header {
-                        background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&w=1920);
-                        background-attachment: fixed;
-                    }
-                }
-            </style>
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .page-header {
+                background-image: linear-gradient(rgba(65,131,215,0.5), rgba(65,131,215,0.5)), url({{ page.image }}?nf_resize=fit&w=1920);
+                background-attachment: fixed;
+            }
+        }
+    </style>
 {% endif %}

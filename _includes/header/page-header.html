@@ -1,0 +1,18 @@
+{% include header/header-bg.html %}
+
+<header class="page-header">
+    <div class="page-header-content" style="padding: 20% 0;">
+        <div class="slider">
+            <ul class="slides">
+                {% for item in site.servicos limit: 3 %}
+                    <li>
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                        <div class="caption primary-color white-text">
+                            <h4 class="text-title">{{ item.title }}</h4>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</header>
