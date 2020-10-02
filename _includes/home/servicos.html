@@ -1,4 +1,20 @@
 <!-- Servicos Section -->
+<section id="servicos" class="section no-pad scrollspy">
+    <div class="container">
+        <div class="section-grid-no-gap">
+            <article class="container">
+                <h4 class="primary-color-text text-title">Aprecie Nossos Serviços</h4>
+
+                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus veniam nesciunt officia. Reiciendis sunt saepe quia cum exercitationem quos sapiente minima, molestias commodi similique consequuntur deleniti quae sequi aperiam.</p>
+
+                <a href="#maisServicos" class="btn waves-effect waves-light">Saiba Mais <i class="fas fa-arrow-down"></i></a>
+
+
+            </article>
+            <img src="/assets/img/IMG_2103.jpg" alt="">
+        </div>
+    </div>
+</section>
 
 <style>
     .servicos-container {
@@ -22,13 +38,11 @@
     }
 </style>
 
-<div id="servicos" class="section scrollspy">
+<div id="maisServicos" class="section scrollspy">
     <div class="container">
-        <h4 class="text-title primary-color-text center-align">Nossos Serviços</h4>
-
-        <section class="row">
+        <section class="slick-servicos">
             {% for item in site.servicos %}
-                <div class="col s12 l4 servicos-container center" data-aos="zoom-in" data-aos-duration="3000" style="padding-bottom: 20px;">
+                <div class="servicos-container center" data-aos="zoom-in" data-aos-duration="3000" style="padding: 20px;">
                     <img data-src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="lazy">
                     <div class="text">
                         <h5><i class="fas fa-lg fa-{{ item.icon }}"></i> <br> {{ item.title }}</h5>
