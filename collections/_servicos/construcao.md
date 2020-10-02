@@ -1,7 +1,7 @@
 ---
 title: Construção
-image: /assets/img/parallax/parallax-1.jpg
-icon: /assets/img/servicos/icons/construcao.svg
+image: /assets/img/IMG_2103.jpg
+icon: hard-hat
 ---
 
 Desde a nossa fundação, construção civil foi o nosso foco principal.
