@@ -1,23 +1,22 @@
-<section class="section no-pad scrollspy" id="equipamentos">
-	<div class="section-grid">
-		<img src="" alt="">
+<section id="equipamentos" class="section no-pad scrollspy">
+	<div class="container">
+		<div class="section-grid-no-gap">
+			<img src="/assets/img/parallax/parallax-2.jpg" alt="">
 
-		<div class="container">
-			<h4 class="text-title primary-color-text">Aluguer de Equipamentos</h4>
+			<article class="container">
+				<h4 class="primary-color-text text-title">Aluguel de Equipamentos</h4>
 
-			<p>Temos uma vasta gama de equipamentos para oferecer serviços de alta qualidade aos nossos clientes, entre alguns dos nossos equipamentos temos:</p>
+				<p>Temos uma vasta gama de equipamentos para oferecer serviços de alta qualidade aos nossos clientes, entre alguns dos nossos equipamentos temos:</p>
 
-			<ul>
-				{% for item in site.equipamentos limit: 6 %}
-					<li>
-						- <a href="{{ item.image }}" data-title="{{ item.title }}" data-lightbox="Equipamentos">{{ item.title }}</a>
-					</li>
-				{% endfor %}
-			</ul>
-			
-			<br>
+				<ul>
+					{% for item in site.equipamentos %}
+						<a href="{{ item.image }}" data-lightbox="equipamentos" data-title="{{ item.title }}"><i class="fas fa-caret-right"></i> {{ item.title }}</a>
+					{% endfor %}
+				</ul>
+				<br>
 
-			<a href="" class="btn-flat primary-color-text">Veja Mais</a>
+				<a href="" class="btn waves-effect waves-light">Veja Mais</a>
+			</article>
 		</div>
 	</div>
 </section>

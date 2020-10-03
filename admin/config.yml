@@ -42,10 +42,5 @@ collections:
     folder: "collections/_clientes"
     create: true
     fields:
-      - {label: "Clientes", name: "title", default: "Clientes", widget: "string"}
-      - label: "Cliente"
-        name: "client"
-        widget: "list"
-        fields:
-          - {label: "Empresa", name: "company", widget: "string"}
-          - {label: "Logotipo", name: "image", widget: "image"}
+      - {label: "Nome do Cliente", name: "title", widget: "string"}
+      - {label: "Logotipo do cliente", name: "image", widget: "image"}

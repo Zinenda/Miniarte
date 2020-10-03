@@ -8,6 +8,7 @@ $(document).ready(function(){
         indicators: true
     });
     $('.scrollspy').scrollSpy();
+    $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
     $('.fixed-action-btn').floatingActionButton();
     $('.modal').modal();

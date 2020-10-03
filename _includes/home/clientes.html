@@ -1,9 +1,12 @@
-<div id="clientes" class="section scrollspy">
-    <div class="row slick-clientes">
-        {% for item in site.clientes.first.client %}
-            <div>
-                <img data-lazy="{{ item.image }}?nf_resize=fit&w=80" alt="{{ item.company }}">
-            </div>
-        {% endfor %}
+<section id="clientes" class="section scrollspy grey lighten-4">
+    <div class="container">
+        <h4 class="text-title primary-color-text">Nossos Clientes</h4>
+        <div class="text-title row slick-clientes">
+            {% for item in site.clientes %}
+                <div>
+                    <img data-lazy="{{ item.image }}?nf_resize=fit&w=80" alt="{{ item.company }}" style="width: 80px; filter: grayscale(1);">
+                </div>
+            {% endfor %}
+        </div>
     </div>
-</div>
+</section>
