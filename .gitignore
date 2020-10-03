@@ -6,3 +6,5 @@ node_modules
 _bower_components
 Gemfile.lock
 _site
+# Local Netlify folder
+.netlify
