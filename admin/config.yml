@@ -3,7 +3,7 @@ backend:
   use_large_media_transforms_in_media_library: false
   branch: v2020
 
-media_folder: 'assets/uploads'
+media_folder: 'assets/img/uploads'
 
 logo_url: 'izitech.co/assets/img/IZILogotipo.svg'
 
@@ -19,6 +19,7 @@ collections:
   - label: "Serviços"
     name: "servicos"
     folder: "collections/_servicos"
+    create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Ícone", name: "icon", widget: "string"}
