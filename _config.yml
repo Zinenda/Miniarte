@@ -25,9 +25,11 @@ exclude:
 # Collections
 collections_dir: collections
 collections:
+  slider:
   sobre:
   perfil:
   servicos:
+    output: true
   produtos:
   portfolio:
 

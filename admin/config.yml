@@ -8,6 +8,14 @@ media_folder: 'assets/img/uploads'
 logo_url: 'https://izitech.co/assets/img/IZILogotipo.svg'
 
 collections:
+  - label: "Slider"
+    name: "slider"
+    folder: "collections/_slider"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
   - label: "Sobre"
     name: "sobre"
     folder: "collections/_sobre"
@@ -35,7 +43,6 @@ collections:
     name: "portfolio"
     folder: "collections/_portfolio"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
