@@ -5,7 +5,7 @@ backend:
 
 media_folder: 'assets/img/uploads'
 
-logo_url: 'izitech.co/assets/img/IZILogotipo.svg'
+logo_url: 'https://izitech.co/assets/img/IZILogotipo.svg'
 
 collections:
   - label: "Sobre"
@@ -25,6 +25,11 @@ collections:
       - {label: "Ícone", name: "icon", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
+      - label: "Imagens"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Imagem, name: image, widget: image}
 
   - label: "Portfólio"
     name: "portfolio"
