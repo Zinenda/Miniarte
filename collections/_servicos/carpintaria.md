@@ -1,7 +1,7 @@
 ---
 title: Carpintaria
-image: /assets/img/IMG_2103.jpg
 icon: hammer
+image: /assets/img/uploads/img_2118.jpg
 ---
 
 Fabricamos diversos produtos na nossa carpintaria.
