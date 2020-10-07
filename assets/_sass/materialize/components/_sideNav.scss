@@ -1,6 +1,6 @@
 .sidenav {
   position: fixed;
-  width: $sidenav-width;
+  width: 250px;
   left: 0;
   top: 0;
   margin: 0;
@@ -70,7 +70,7 @@
       line-height: $sidenav-line-height;
       margin: 0 ($sidenav-padding * 2) 0 0;
       width: $sidenav-item-height / 2;
-      color: rgba(0,0,0,.54);
+      color: $sidenav-font-color;
     }
   }
 
@@ -180,7 +180,7 @@
       }
     }
 
-    > a {
+    a {
       padding: 0 $sidenav-padding;
     }
 
