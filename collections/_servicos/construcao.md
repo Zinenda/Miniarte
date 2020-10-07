@@ -1,7 +1,7 @@
 ---
 title: Construção
-image: /assets/img/IMG_2103.jpg
 icon: hard-hat
+image: /assets/img/uploads/img-20190208-wa0016.jpg
 ---
 
 Desde a nossa fundação, construção civil foi o nosso foco principal.
