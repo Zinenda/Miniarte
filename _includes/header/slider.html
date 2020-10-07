@@ -4,12 +4,10 @@
             <li>
                 <img src="{{ item.image }}" alt="{{ item.title }}">
                 
-                <div class="caption center-align">
-                    <div class="container">
-                        <h4 class="text-title primary-color white-text">
-                            <div class="container">{{ item.title }}</div>
-                        </h4>
-                    </div>
+                <div class="caption left-align">
+                    <h4 class="text-title hide-on-large-only" style="text-shadow: 2px -2px {{ site.color }};">{{ item.title }}</h4>
+
+                    <h2 class="text-title hide-on-med-and-down" style="text-shadow: 2px -2px {{ site.color }};">{{ item.title }}</h2>
                 </div>
             </li>
         {% endfor %}

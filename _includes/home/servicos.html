@@ -1,17 +1,30 @@
 <!-- Servicos Section -->
 <section id="servicos" class="section no-pad scrollspy">
     <div class="container">
-        <div class="section-grid-no-gap">
-            <article class="container">
+        <div class="section-grid">
+            <article>
                 <h4 class="primary-color-text text-title">Aprecie Nossos Serviços</h4>
 
-                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus veniam nesciunt officia. Reiciendis sunt saepe quia cum exercitationem quos sapiente minima, molestias commodi similique consequuntur deleniti quae sequi aperiam.</p>
+                <blockquote>
+                    <div class="flow-text">
+                        Nesses ultimos 25 anos, adicionamos vários tipos de serviços ao nosso portfólio, não dedicando-nos apenas na Construção de Edificios
+                    </div>
+                </blockquote>
 
+                <br>
                 <a href="#maisServicos" class="btn waves-effect waves-light">Saiba Mais <i class="fas fa-arrow-down"></i></a>
 
 
             </article>
-            <img src="/assets/img/IMG_2103.jpg" alt="">
+            <div class="slider">
+                <ul class="slides">
+                    {% for item in site.servicos limit: 3 %}
+                        <li>
+                            <img src="{{ item.image }}" alt="{{ item.title }}">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 </section>
