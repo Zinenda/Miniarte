@@ -29,6 +29,7 @@ collections:
     folder: "collections/_servicos"
     create: true
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Ícone", name: "icon", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}

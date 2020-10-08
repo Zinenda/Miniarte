@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.slider').slider({
-        height: 640
+        height: 640,
+        indicators: false
     });
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Vidros e Alumínio
 icon: door-open
 image: /assets/img/uploads/img_2097.jpg

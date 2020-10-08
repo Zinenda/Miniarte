@@ -1,20 +1,15 @@
 <!-- Servicos Section -->
 <section id="servicos" class="section no-pad scrollspy">
     <div class="container">
-        <div class="section-grid">
-            <article>
-                <h4 class="primary-color-text text-title">Aprecie Nossos Serviços</h4>
+        <div class="section-grid-no-gap">
+            <article class="primary-color white-text">
+                <div class="container">
+                    <h4 class="text-title">Aprecie Nossos Serviços</h4>
 
-                <blockquote>
-                    <div class="flow-text">
-                        Nesses ultimos 25 anos, adicionamos vários tipos de serviços ao nosso portfólio, não dedicando-nos apenas na Construção de Edificios
-                    </div>
-                </blockquote>
+                    <p class="light text-title">Nesses ultimos 25 anos, adicionamos vários tipos de serviços ao nosso portfólio, não dedicando-nos apenas na Construção de Edificios</p>
 
-                <br>
-                <a href="#maisServicos" class="btn waves-effect waves-light">Saiba Mais <i class="fas fa-arrow-down"></i></a>
-
-
+                    <a href="#maisServicos" class="btn waves-effect waves-light white primary-color-text">Saiba Mais <i class="fas fa-arrow-down"></i></a>
+                </div>
             </article>
             <div class="slider">
                 <ul class="slides">
@@ -59,7 +54,7 @@
                     <img data-src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="lazy">
                     <div class="text">
                         <h5><i class="fas fa-lg fa-{{ item.icon }}"></i> <br> {{ item.title }}</h5>
-                        <a href="{{ item.title | downcase }}/" class="btn waves-effect waves-light white-text">Veja Mais</a>
+                        <a href="{{ item.url }}" class="btn-large waves-effect waves-light white-text">Saiba Mais</a>
                     </div>
                 </div>
             {% endfor %}

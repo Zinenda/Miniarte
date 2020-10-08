@@ -1,20 +1,18 @@
-{% include header/header-bg.html %}
-
-<header class="page-header">
-    <div class="page-header-content" style="padding: 20% 0;">
+<header class="section-grid-no-gap">
+    <article class="primary-color white-text">
         <div class="container">
-            <div class="slider">
-                <ul class="slides">
-                    {% for item in site.servicos limit: 3 %}
-                        <li>
-                            <img src="{{ item.image }}" alt="{{ item.title }}">
-                            <div class="caption primary-color white-text">
-                                <h4 class="text-title">{{ item.title }}</h4>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
+            <h4 class="hide-on-large-only text-title">{{ page.title }}</h4>
+            <h1 class="hide-on-med-and-down text-title">{{ page.title }}</h1>
+
+            <div class="flow-text">
+                {{ page.content }}
+            </div>
+
+            <div class="text-title">
+                <a href="#main-content" class="btn-large waves-effect waves-primary white primary-color-text">Aprecie Mais</a>
             </div>
         </div>
-    </div>
+    </article>
+
+    <img src="{{ page.image }}" alt="{{ page.title }}">
 </header>

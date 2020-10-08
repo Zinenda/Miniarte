@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Estradas e Pontes
 icon: road
 image: /assets/img/IMG_2103.jpg

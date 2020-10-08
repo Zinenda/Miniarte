@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Construção Civil
 icon: hard-hat
 image: /assets/img/uploads/img-20190208-wa0016.jpg

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Carpintaria
 icon: hammer
 image: /assets/img/uploads/img_2118.jpg

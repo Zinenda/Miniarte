@@ -1,5 +1,6 @@
 ---
 title: Pintura
+layout: page
 image: /assets/img/IMG_2103.jpg
 icon: paint-roller
 ---

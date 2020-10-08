@@ -10,9 +10,11 @@ layout: compress
 
     <body>
         {% include nav/navbar.html %}
-        <main id="top" class="animate-bottom section no-pad scrollspy">
+        <main class="animate-bottom">
             
-            {{ content }}
+            <div id="main" class="section no-pad scrollspy">
+                {{ content }}
+            </div>
 
             {% include contact-form/contact-modal.html %}
         </main>

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Canalização
 image: /assets/img/IMG_2103.jpg
 icon: faucet

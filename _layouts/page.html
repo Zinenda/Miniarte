@@ -2,23 +2,58 @@
 layout: default
 ---
 
-<header class="primary-color white-text" style="height: 50vh;">
-    <div class="container">
-        <div class="center">
-            <img src="{{ site.logo }}" alt="{{ site.title }}" style="width: 300px;">
-            <h1>{{ page.title }}</h1>
-            <h2>{{ page.description }}</h2>
+{% include header/page-header.html %}
 
-            <a href="mailto:{{ site.email }}" title="Email" class="btn waves-effect waves-light">Contacte-nos</a>
-            <a href="#sobre" class="btn-flat waves-effect modal-trigger white-text" style="border: solid 1px #fff;">Conheça-nos</a>
+<style>
+    /* The Masonry Container */
+    .masonry {
+    margin: 5px auto;
+    max-width: 100%;
+    column-gap: 10px;
+    }
+
+    /* The Masonry Brick */
+    .item {
+        padding: 5px;
+        margin: 0 0 5px;
+    }
+
+    /* Masonry on large screens */
+    @media only screen and (min-width: 1024px) {
+        .masonry {
+            column-count: 3;
+        }
+    }
+
+    /* Masonry on medium-sized screens */
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+        .masonry {
+            column-count: 2;
+        }
+    }
+
+    /* Masonry on small screens */
+    @media only screen and (max-width: 767px) and (min-width: 540px) {
+        .masonry {
+            column-count: 1;
+        }
+    }
+</style>
+
+<section id="main-content" class="section scrollspy">
+    <div class="container">
+        <div class="masonry">
+            {% for image in page.images %}
+                <a href="{{ image }}" data-title="{{ item.title }}" data-lightbox="{{ page.title }}">
+                    <img data-aos="zoom-in" data-aos-duration="3000"
+                        data-src="{{ image }}?nf_resize=fit&w=320"
+                        alt="{{ item.title }}"
+                        data-srcset="{{ image }}?nf_resize=fit&h=480 2x,
+                        {{ image }}?nf_resize=fit&h=720 3x,
+                        {{ image }}?nf_resize=fit&h=1080 4x"
+                        class="lazy">
+                </a>
+            {% endfor %}
         </div>
     </div>
-</header>
-
-<section class="section">
-    <article class="container">
-        <div class="row">
-            {{ content }}
-        </div>
-    </article>
 </section>

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Electricidade
 image: /assets/img/IMG_2103.jpg
 icon: bolt
