@@ -30,7 +30,7 @@ collections:
   perfil:
   servicos:
     output: true
-  produtos:
+  clientes:
   portfolio:
 
 # Assets
