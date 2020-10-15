@@ -32,6 +32,7 @@ collections:
     output: true
   clientes:
   portfolio:
+  equipamentos:
 
 # Assets
 sass:

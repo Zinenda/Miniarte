@@ -40,6 +40,14 @@ collections:
         summary: '{{fields.image}}'
         field: {label: Imagem, name: image, widget: image}
 
+  - label: "Equipamentos"
+    name: "equipamentos"
+    folder: "collections/_equipamentos"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
   - label: "Portfólio"
     name: "portfolio"
     folder: "collections/_portfolio"
