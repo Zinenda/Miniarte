@@ -1,0 +1,16 @@
+<div id="maisServicos" class="section scrollspy">
+    <div class="container">
+        <section class="slick-servicos">
+            {% for item in site.servicos %}
+                <div class="servicos-container center" data-aos="zoom-in" data-aos-duration="3000" style="padding: 20px;">
+                    <img data-src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="lazy">
+                    <div class="text">
+                        <h5><i class="fas fa-lg fa-{{ item.icon }}"></i> <br> {{ item.title }}</h5>
+                        <br>
+                        <a href="{{ item.url }}" class="btn waves-effect waves-light white-text">Saiba Mais</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+    </div>
+</div>

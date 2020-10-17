@@ -6,19 +6,21 @@
     
             <div class="primary-color white-text">
                 <div class="container">
-                    <div class="carousel carousel-slider">
+                    <div class="sobre-carousel">
                         {% for item in site.sobre %}
-                            <div class="carousel-item">
+                            <div>
                                 <h4 class="text-title">{{ item.title }}</h4>
     
-                                <article class="light">
+                                <article>
                                     {{ item.content }}
                                 </article>
                             </div>
                         {% endfor %}
                     </div>
-                    <br>
-                    <a href="#maisSobreModal" class="btn modal-trigger waves-effect waves-light white primary-color-text">Saiba Mais</a>
+
+                    <div class="text-title">
+                        <a href="#maisSobreModal" class="btn modal-trigger waves-effect waves-light white primary-color-text">Saiba Mais</a>
+                    </div>
                 </div>
             </div>
         </div>

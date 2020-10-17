@@ -11,13 +11,11 @@
 
 {% include scripts/aos.html %}
 
+{% include scripts/lightbox.html %}
+
 {% if page.layout == "default" %}
 	{% include scripts/slick-carousel.html %}
 	{% include scripts/gliderjs.html %}
-{% endif %}
-
-{% if page.layout == "page" %}
-	{% include scripts/lightbox.html %}
 {% endif %}
 
 <script defer src="/assets/js/init.js"></script>

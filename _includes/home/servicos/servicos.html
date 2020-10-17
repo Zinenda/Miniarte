@@ -1,0 +1,31 @@
+<!-- Servicos Section -->
+<section id="servicos" class="section no-pad scrollspy">
+    <div class="container">
+        <div class="section-grid-no-gap">
+            <article class="primary-color white-text">
+                <div class="container">
+                    <h4 class="text-title">Aprecie Nossos Serviços</h4>
+
+                    <p class="flow-text">Nesses ultimos 25 anos, adicionamos vários tipos de serviços ao nosso portfólio, não dedicando-nos apenas na Construção de Edificios</p>
+
+                    <div class="text-title">
+                        <a href="#maisServicos" class="btn waves-effect waves-primary white primary-color-text">Saiba Mais <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                </div>
+            </article>
+            <div class="slider">
+                <ul class="slides">
+                    {% for item in site.servicos limit: 3 %}
+                        <li>
+                            <img src="{{ item.image }}" alt="{{ item.title }}">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include home/servicos/style.html %}
+
+{% include home/servicos/maisServicos.html %}

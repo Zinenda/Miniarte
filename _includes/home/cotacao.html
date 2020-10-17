@@ -1,32 +1,34 @@
-<div class="section-grid">
-    <a href="#cotacao" class="btn-large waves-effect waves-light modal-trigger">PEÇA UMA COTAÇÃO</a>
+<div class="container">
+    <div class="section-grid">
+        <a href="#cotacao" class="btn-large waves-effect waves-light modal-trigger">PEÇA UMA COTAÇÃO</a>
+    </div>
 </div>
 
 <div id="cotacao" class="modal">
-    <div class="modal-content">
+    <div class="modal-content center">
         <div class="container">
-            <form method="post" netlify name="Cotacao">
-                {% include contact-form/name.html %}
-    
-                {% include contact-form/email.html %}
-    
-                {% include contact-form/telephone.html %}
-    
-                <div class="row">
-                    <div class="input-field">
-                        <select name="Serviço a Reservar" class="browser-default multiple">
-                            <option value="" disabled selected>Serviços</option>
-                            {% for item in site.servicos %}
-                                <option value="{{ forloop.index }}">{{ item.title }}</option>
-                            {% endfor %}
-                        </select>
+            <h5 class="text-title primary-color-text">Formulário da Cotação</h5>
+            <div class="row">
+                <form method="post" netlify name="Cotacao">
+                    {% include contact-form/name.html %}
+        
+                    {% include contact-form/email.html %}
+        
+                    {% include contact-form/telephone.html %}
+        
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="fas fa-edit prefix"></i>
+                            <input type="text" name="Assunto" id="subject" class="validate" validate>
+                            <label for="subject">Serviço</label>
+                        </div>
                     </div>
-                </div>
-
-                {% include contact-form/message.html %}
     
-                {% include contact-form/submit.html %}
-            </form>
+                    {% include contact-form/message.html %}
+        
+                    {% include contact-form/submit.html %}
+                </form>
+            </div>
         </div>
     </div>
 </div>

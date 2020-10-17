@@ -1,5 +1,5 @@
 {% for item in site.data.nav %}
     <li>
-        <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary primary-color-text">{{ item.title }}</a>
+        <a href="{% unless page.layout == "default" %}/{% endunless %}{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary primary-color-text">{{ item.title }}</a>
     </li>
 {% endfor %}

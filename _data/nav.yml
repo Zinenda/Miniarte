@@ -3,7 +3,12 @@
 
 - title: Serviços
   url: "#servicos"
-
-- title: Portfólio
-  url: "#portfolio"
   
+- title: Equipamentos
+  url: "#equipamentos"
+
+- title: Clientes
+  url: "#clientes"
+
+- title: Localização
+  url: "#localizacao"

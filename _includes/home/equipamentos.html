@@ -1,21 +1,21 @@
 <section id="equipamentos" class="section no-pad scrollspy">
-	<div class="container">
+	<div class="container primary-color white-text">
 		<div class="section-grid-no-gap">
-			<img src="/assets/img/parallax/parallax-2.jpg" alt="">
+			<img src="/assets/img/uploads/Rectroescavadora&.jpg" alt="Rectroescavadora">
 
 			<article class="container">
-				<h4 class="primary-color-text text-title">Aluguel de Equipamentos</h4>
+				<h4 class="text-title">Aluguel de Equipamentos</h4>
 
 				<p>Temos uma vasta gama de equipamentos para oferecer serviços de alta qualidade aos nossos clientes, entre alguns dos nossos equipamentos temos:</p>
 
 				<ul>
 					{% for item in site.equipamentos %}
-						<a href="{{ item.image }}" data-lightbox="equipamentos" data-title="{{ item.title }}"><i class="fas fa-caret-right"></i> {{ item.title }}</a>
+						<li><a href="{{ item.image }}" data-lightbox="equipamentos" data-title="{{ item.title }}" class="white-text"><i class="fas fa-caret-right"></i> {{ item.title }}</a></li>
 					{% endfor %}
 				</ul>
 				<br>
 
-				<a href="" class="btn waves-effect waves-light">Veja Mais</a>
+				<a href="" class="btn waves-effect waves-light white primary-color-text">Veja Mais</a>
 			</article>
 		</div>
 	</div>
