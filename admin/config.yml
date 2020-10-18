@@ -22,7 +22,7 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Conteúdo", name: "body", widget: "markdown"}
+      - {label: "Descrição", name: "body", widget: "markdown"}
 
   - label: "Serviços"
     name: "servicos"
@@ -33,7 +33,7 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Ícone", name: "icon", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Conteúdo", name: "body", widget: "markdown"}
+      - {label: "Descrição", name: "body", widget: "markdown"}
       - label: "Imagens"
         name: "images"
         widget: "list"
@@ -48,17 +48,17 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
 
-  - label: "Portfólio"
-    name: "portfolio"
-    folder: "collections/_portfolio"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
-      - label: "Categoria"
-        name: "category"
-        widget: "select"
-        options: ["construcao", "estradas", "carpintaria", "pintura", "electricidade", "canalizacao", "lojas"]
+#  - label: "Portfólio"
+#    name: "portfolio"
+#    folder: "collections/_portfolio"
+#    create: true
+#    fields:
+#      - {label: "Titulo", name: "title", widget: "string"}
+#      - {label: "Imagem", name: "image", widget: "image"}
+#      - label: "Categoria"
+#        name: "category"
+#        widget: "select"
+#        options: ["construcao", "estradas", "carpintaria", "pintura", "electricidade", "canalizacao", "lojas"]
 
   - label: "Clientes"
     name: "clientes"
@@ -67,3 +67,20 @@ collections:
     fields:
       - {label: "Nome do Cliente", name: "title", widget: "string"}
       - {label: "Logotipo do cliente", name: "image", widget: "image"}
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Lojas"
+        name: "lojas"
+        file: "_pages/lojas/index.md"
+        fields:
+          - {label: Layout, name: layout, widget: hidden, default: page}
+          - {label: Title, name: title, widget: string, default: Lojas de Ferragem}
+          - {label: Imagem, name: image, widget: image}
+          - {label: "Descrição", name: "body", widget: "markdown"}
+          - label: "Imagens"
+            name: "images"
+            widget: "list"
+            summary: '{{fields.image}}'
+            field: {label: Imagem, name: image, widget: image}
