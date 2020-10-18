@@ -1,20 +1,24 @@
 <footer class="page-footer white-text grey darken-4">
     <div class="container">
         <div class="section-grid">
-            <h4 class="text-title">{{ site.title }} - {{ site.description }}</h4>
+            <div class="text-title container">
+                <img src="{{ site.logo }}" alt="">
+            </div>
 
             <article>
-                <h6 class="text-title">Serviços</h6>
+                <h5>Serviços</h5>
 
                 <ul>
                     {% for item in site.servicos %}
-                        <li>{{ item.title }}</li>
+                        <li>
+                            <a href="#servicos{{ forloop.index }}" class="modal-trigger white-text">{{ item.title }}</a>
+                        </li>
                     {% endfor %}
                 </ul>
             </article>
 
             <article>
-                <h6 class="text-title">Siga-nos</h6>
+                <h5>Siga-nos</h5>
 
                 {% include social.html %}
             </article>
@@ -22,7 +26,7 @@
     </div>
 
     <div class="footer-copyright">
-        <div class="container">
+        <div class="container center">
             <div class="section-grid">
                 <span>&copy; {{ site.time | date: "%Y" }} Todos Direitos Reservados a {{ site.title }} - {{ site.description }}</span>
 
@@ -31,3 +35,5 @@
         </div>
     </div>
 </footer>
+
+{% include home/servicos/modalServicos.html %}

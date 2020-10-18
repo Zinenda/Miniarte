@@ -1,5 +1,30 @@
 <div class="fixed-action-btn">
-    <a href="#top" class="btn-floating btn-large waves-effect waves-light waves-circle">
-        <i class="fa fa-chevron-up"></i>
-    </a>
+    <button class="btn-floating btn-large waves-effect waves-circle waves-light">
+        <div class="center">
+            <i class="fas fa-lg fa-plus"></i>
+        </div>
+    </button>
+
+    <ul>
+        <li><a href="#main" class="btn-floating waves-effect waves-circle waves-light"><i class="fas fa-lg fa-chevron-up"></i></a></li>
+        <li><a href="/" class="btn-floating waves-effect waves-circle waves-light"><i class="fas fa-lg fa-home"></i></a></li>
+        
+        {% for item in site.data.social %}
+            <li>
+                <a 
+                    href="{{ item.url }}"
+                    title="{{ item.title }}"
+                    target="_blank"
+                    class="btn-floating tooltipped white-text"
+                    data-position="left"
+                    data-delay="50"
+                    data-tooltip="{{ item.title }}">
+                        
+                    <div class="center">
+                        <i class="fab fa-{{ item.icon }}"></i>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 </div>

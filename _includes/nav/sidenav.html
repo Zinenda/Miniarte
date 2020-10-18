@@ -1,10 +1,10 @@
 <aside id="sideNav" class="sidenav">
-    <a href="/">
+    <div class="text-title container">
         {% include nav/logotipoMiniarte.svg %}
-    </a>
-    <hr>
-
+    </div>
+    <div class="divider"></div>
     <ul>
+        <li><a href="/" {% if page.layout == "default" %}class="active"{% endif %}>Página Inicial</a></li>
         {% include nav/nav.html %}
     </ul>
 </aside>

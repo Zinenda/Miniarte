@@ -4,7 +4,7 @@
             <div class="nav-wrapper">
                 <a href="/" class="brand-logo">{% include nav/logotipoMiniarte.svg %}</a>
 
-                <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-lg fa-bars"></i></a>
+                <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-lg fa-bars primary-color-text"></i></a>
 
                 <ul class="right hide-on-med-and-down">
                     {% include nav/nav.html %}
@@ -16,8 +16,10 @@
             </div>
 
             <div class="nav-content">
-                <a href="#contactos" class="hide-on-large-only btn-floating halfway-fab waves-effect waves-circle waves-light modal-trigger"><i class="fas fa-lg fa-envelope"></i></a>
+                <button data-target="contactos" class="hide-on-large-only btn-floating btn-large halfway-fab waves-effect waves-circle waves-light modal-trigger"><i class="fas fa-lg fa-mail-bulk"></i></button>
             </div>
         </div>
     </nav>
 </div>
+
+{% include nav/sidenav.html %}

@@ -9,17 +9,32 @@ layout: default
 <section id="main-content" class="section scrollspy">
     <div class="container">
         <div class="masonry">
-            {% for image in page.images %}
-                <a href="{{ image }}" data-title="{{ item.title }}" data-lightbox="{{ page.title }}">
-                    <img data-aos="zoom-in" data-aos-duration="3000"
-                        data-src="{{ image }}?nf_resize=fit&w=320"
-                        alt="{{ item.title }}"
-                        data-srcset="{{ image }}?nf_resize=fit&h=480 2x,
-                        {{ image }}?nf_resize=fit&h=720 3x,
-                        {{ image }}?nf_resize=fit&h=1080 4x"
-                        class="lazy">
-                </a>
-            {% endfor %}
+            {% if page.images %}
+                {% for image in page.images %}
+                    <a href="{{ image }}" data-lightbox="{{ page.title }}">
+                        <img data-aos="zoom-in" data-aos-duration="3000"
+                            data-src="{{ image }}?nf_resize=fit&w=320"
+                            alt="{{ item.title }}"
+                            data-srcset="{{ image }}?nf_resize=fit&h=480 2x,
+                            {{ image }}?nf_resize=fit&h=720 3x,
+                            {{ image }}?nf_resize=fit&h=1080 4x"
+                            class="lazy">
+                    </a>
+                {% endfor %}
+
+                {% else %}
+                    {% for item in paginator.posts %}
+                        <a href="{{ item.image }}" data-title="{{ item.title }}" data-lightbox="{{ page.title }}">
+                            <img data-aos="zoom-in" data-aos-duration="3000"
+                                data-src="{{ item.image }}?nf_resize=fit&w=320"
+                                alt="{{ item.title }}"
+                                data-srcset="{{ item.image }}?nf_resize=fit&h=480 2x,
+                                {{ item.image }}?nf_resize=fit&h=720 3x,
+                                {{ item.image }}?nf_resize=fit&h=1080 4x"
+                                class="lazy">
+                        </a>
+                    {% endfor %}
+            {% endif %}
         </div>
     </div>
 </section>

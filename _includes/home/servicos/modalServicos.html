@@ -1,0 +1,17 @@
+{% for item in site.servicos %}
+    <div id="servicos{{ forloop.index }}" class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <h5 class="text-title primary-color-text">{{ item.title }}</h5>
+
+                <article class="light">
+                    {{ item.content }}
+                </article>
+
+                <div class="text-title">
+                    <a href="{{ item.url }}" class="btn waves-effect waves-light" title="{{ item.title }}">Aprecie</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

@@ -9,14 +9,17 @@
 				<p>Temos uma vasta gama de equipamentos para oferecer serviços de alta qualidade aos nossos clientes, entre alguns dos nossos equipamentos temos:</p>
 
 				<ul>
-					{% for item in site.equipamentos %}
+					{% for item in site.equipamentos limit: 3 %}
 						<li><a href="{{ item.image }}" data-lightbox="equipamentos" data-title="{{ item.title }}" class="white-text"><i class="fas fa-caret-right"></i> {{ item.title }}</a></li>
 					{% endfor %}
 				</ul>
-				<br>
 
-				<a href="" class="btn waves-effect waves-light white primary-color-text">Veja Mais</a>
+				<div class="text-title">
+					<a href="/equipamentos/" class="btn waves-effect waves-light white primary-color-text">Veja Mais</a>
+				</div>
 			</article>
 		</div>
 	</div>
 </section>
+
+<div class="divider hide-on-med-and-up"></div>
