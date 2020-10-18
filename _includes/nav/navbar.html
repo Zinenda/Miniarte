@@ -4,7 +4,9 @@
             <div class="nav-wrapper">
                 <a href="/" class="brand-logo">{% include nav/logotipoMiniarte.svg %}</a>
 
-                <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-lg fa-bars primary-color-text"></i></a>
+                {% unless page.layout == "default" %}
+                    <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-lg fa-bars primary-color-text"></i></a>
+                {% endunless %}
 
                 <ul class="right hide-on-med-and-down">
                     {% include nav/nav.html %}

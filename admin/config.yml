@@ -24,6 +24,13 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "body", widget: "markdown"}
 
+  - label: "Perfil"
+    name: "perfil"
+    folder: "collections/_perfil"
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Descrição", name: "body", widget: "markdown"}
+
   - label: "Serviços"
     name: "servicos"
     folder: "collections/_servicos"

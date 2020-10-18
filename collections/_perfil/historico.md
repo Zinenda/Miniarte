@@ -1,6 +1,5 @@
 ---
 title: Histórico
-image: /assets/img/perfil/
 ---
 
 A Miniarte foi fundada em 1992, sendo nessa altura uma pequena brigada de 6 trabalhadores que realizava trabalhos de electricidade, pinturas e obras em alvenaria, sem escritórios e muito menos estaleiro.
