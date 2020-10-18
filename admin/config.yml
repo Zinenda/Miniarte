@@ -68,14 +68,14 @@ collections:
       - {label: "Nome do Cliente", name: "title", widget: "string"}
       - {label: "Logotipo do cliente", name: "image", widget: "image"}
 
-  - label: "Pages"
+  - label: "Páginas"
     name: "pages"
     files:
       - label: "Lojas"
         name: "lojas"
         file: "_pages/lojas/index.md"
         fields:
-          - {label: Layout, name: layout, widget: hidden, default: page}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: Title, name: title, widget: string, default: Lojas de Ferragem}
           - {label: Imagem, name: image, widget: image}
           - {label: "Descrição", name: "body", widget: "markdown"}

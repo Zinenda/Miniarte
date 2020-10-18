@@ -2,14 +2,19 @@
 	<div class="container primary-color white-text">
 		<div class="section-grid-no-gap">
 			<article class="container">
-				<h4 class="text-title">Lojas de Ferragens</h4>
+				{% for item in site.pages %}
+					{% if item.title == "Lojas de Ferranges" %}
+						<h4 class="text-title">{{ item.title }}</h4>
 
-				<p>Temos diversas lojas de materiais de construção nos principais distritos da Provincía de Tete.</p>
-				<p>Além disso, temos um estaleiro de fabrico de blocos para construção, sem deixar de lado o nosso maior fornecimento de vidros de alta qualidade.</p>
+						<article>
+							{{ item.content }}
+						</article>
 
-				<div class="text-title">
-					<a href="/lojas/" class="btn-flat waves-effect waves-primary white-text">Aprecie a Galeria de Fotos</a>
-				</div>
+						<div class="text-title">
+							<a href="{{ item.url }}" title="{{ item.title }}" class="btn white primary-color-text waves-effect waves-primary">Aprecie Mais</a>
+						</div>
+					{% endif %}
+				{% endfor %}
 			</article>
 
 			<img src="/assets/img/uploads/loja.jpg" alt="">
