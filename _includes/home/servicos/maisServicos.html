@@ -3,7 +3,7 @@
         <section class="slick-servicos">
             {% for item in site.servicos %}
                 <div class="servicos-container center" data-aos="zoom-in" data-aos-duration="3000" style="padding: 20px;">
-                    <img data-src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="lazy">
+                    <img data-lazy="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}">
                     <div class="text">
                         <h5><i class="fas fa-lg fa-{{ item.icon }}"></i> <br> {{ item.title }}</h5>
                         <br>
