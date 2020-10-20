@@ -1,11 +1,10 @@
 <header class="container section-grid-no-gap">
     <article class="primary-color white-text">
         <div class="container">
-            <h4 class="hide-on-large-only text-title">{{ page.title }}</h4>
-            <h1 class="hide-on-med-and-down text-title">{{ page.title }}</h1>
+            <h4 class="text-title">{{ page.title }}</h4>
 
             <article>
-                {{ page.content }}
+                {{ page.content | markdownify }}
             </article>
 
             <div class="text-title">

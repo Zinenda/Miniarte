@@ -5,7 +5,7 @@
                 <h5 class="text-title primary-color-text">{{ item.title }}</h5>
 
                 <article class="light">
-                    {{ item.content }}
+                    {{ item.content | markdownify }}
                 </article>
 
                 <div class="text-title">
