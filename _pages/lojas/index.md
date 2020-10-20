@@ -10,7 +10,10 @@ images:
   - /assets/img/uploads/img_2080.jpg
   - /assets/img/uploads/img_2082.jpg
 ---
+Temos diversas lojas de materiais de construção nos principais distritos da Província de Tete, entre eles:
 
-Temos diversas lojas de materiais de construção nos principais distritos da Província de Tete.
+* Cahora Bassa (Chitima)
+* Vila de Úlongue
+* Chiuta
 
-Além disso, temos um estaleiro de fabrico de blocos para construção, sem deixar de lado o nosso maior fornecimento de vidros de alta qualidade.
+Além disso, temos um estaleiro de fabrico de blocos para construção, sem deixar de lado o fornecimento de vidros de alta qualidade.
