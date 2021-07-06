@@ -77,10 +77,8 @@ collections:
 
   - label: "Lojas"
     name: "lojas"
-    files:
-      - label: "Lojas"
-        name: "lojas"
-        folder: "collections/_lojas"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Imagem, name: image, widget: image}
+    folder: "collections/_lojas"
+    create: true
+    fields:
+    - {label: Title, name: title, widget: string}
+    - {label: Imagem, name: image, widget: image}
