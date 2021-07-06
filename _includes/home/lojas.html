@@ -14,7 +14,7 @@
 				{% endfor %}
 
 				<ul class="section-grid">
-					{% for item in site.lojas %}
+					{% for item in site.lojas reversed limit: 6 %}
 						<li>
 							<a href="{{ item.image }}" data-lightbox="loja" data-title="{{ item.title }}">
 								<img src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}">
