@@ -2,7 +2,7 @@
 layout: page
 title: Estradas e Pontes
 icon: road
-image: /assets/img/IMG_2103.jpg
+image: /assets/img/uploads/excavator-breaking-concrete-road-surface-with-hydrohammer-drill-at-repairing-roadwork.jpg
 images:
   - /assets/img/uploads/20140730_103916.jpg
   - /assets/img/uploads/20140730_154812.jpg
