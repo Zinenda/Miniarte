@@ -2,7 +2,7 @@
 layout: page
 title: Carpintaria
 icon: hammer
-image: /assets/img/uploads/img_2129.jpg
+image: /assets/img/uploads/carpintaria.jpg
 images:
   - /assets/img/uploads/img_2115.jpg
   - /assets/img/uploads/img_2116.jpg
