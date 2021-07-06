@@ -1,4 +1,4 @@
 ---
 title: Bulldozer
-image: /assets/img/uploads/bulldozer.jpg
+image: /assets/img/uploads/freepikbulldozer.jpg
 ---
