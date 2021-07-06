@@ -1,4 +1,4 @@
 ---
 title: Motoniveladora
-image: /assets/img/uploads/motoniveladora.jpg
+image: /assets/img/uploads/grader.jpg
 ---
