@@ -2,7 +2,7 @@
 layout: page
 title: Construção Civil
 icon: hard-hat
-image: /assets/img/uploads/img-20190208-wa0016.jpg
+image: /assets/img/uploads/escolaminiarte.jpg
 images:
   - /assets/img/uploads/20141103_072329.jpg
   - /assets/img/uploads/20141120_152449.jpg
