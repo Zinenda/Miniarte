@@ -1,23 +1,28 @@
-<section id="lojas" class="section no-pad scrollspy">
-	<div class="container primary-color white-text">
+<section id="lojas" class="section no-pad scrollspy container primary-color white-text">
+	<div class="text-title">
 		<div class="section-grid-no-gap">
+
 			<article class="container">
 				{% for item in site.pages %}
-					{% if item.title == "Lojas de Ferranges" %}
-						<h4 class="text-title">{{ item.title }}</h4>
+					{% if item.title == "Lojas" %}
+						<h4>Lojas de Ferragens</h4>
 
-						<article>
-							{{ item.content | markdownify }}
-						</article>
-
-						<div class="text-title">
-							<a href="{{ item.url }}" title="{{ item.title }}" class="btn white primary-color-text waves-effect waves-primary">Aprecie Mais</a>
-						</div>
+							<article>
+								{{ item.content | markdownify }}
+							</article>
 					{% endif %}
 				{% endfor %}
-			</article>
 
-			<img src="/assets/img/uploads/loja.jpg" alt="">
+				<ul class="section-grid">
+					{% for item in site.lojas %}
+						<li>
+							<a href="{{ item.image }}" data-lightbox="loja" data-title="{{ item.title }}">
+								<img src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}">
+							</a>							
+						</li>
+					{% endfor %}
+				</ul>
+			</article>
 		</div>
 	</div>
 </section>

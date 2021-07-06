@@ -15,12 +15,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - bower_components
-  - node_modules
-  - vendor
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
 # Collections
 collections_dir: collections
@@ -33,6 +38,7 @@ collections:
   clientes:
   portfolio:
   equipamentos:
+  lojas:
 
 # Assets
 sass:

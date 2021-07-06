@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lojas de Ferranges
+title: Lojas
 image: /assets/img/uploads/loja.jpg
 images:
   - /assets/img/uploads/img_2073.jpg

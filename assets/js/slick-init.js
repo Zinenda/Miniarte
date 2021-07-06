@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('.sobre-carousel').slick();
 
 	$('.slick-servicos').slick({
-		dots: true,
+		dots: false,
 		infinite: false,
 		lazyLoad: 'ondemand',
 		speed: 300,
@@ -15,8 +15,6 @@ $(document).ready(function(){
 			settings: {
 			  slidesToShow: 3,
 			  slidesToScroll: 3,
-			  infinite: true,
-			  dots: true
 			}
 		  },
 		  {
