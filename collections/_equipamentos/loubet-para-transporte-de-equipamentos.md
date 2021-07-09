@@ -1,4 +1,4 @@
 ---
 title: Loubet para transporte de equipamentos
-image: /assets/img/uploads/loubet.jpg
+image: /assets/img/uploads/noteboom-80t.jpg
 ---
